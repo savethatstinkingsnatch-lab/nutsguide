@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Nut Grove",
+      "hasCanvas": false,
+      "bodyTextLen": 4962,
+      "bodyTextHash": "d57edd957a913d264820096a1d0bede0c4c08c14acc2f010ca8c87110e42da6e",
+      "bodyTextPrefix": "Nut Grove A beginner’s climate guide to growing nuts Zone 6 Four",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Nut Grove",
+      "hasCanvas": false,
+      "bodyTextLen": 4962,
+      "bodyTextHash": "d57edd957a913d264820096a1d0bede0c4c08c14acc2f010ca8c87110e42da6e",
+      "bodyTextPrefix": "Nut Grove A beginner’s climate guide to growing nuts Zone 6 Four",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
