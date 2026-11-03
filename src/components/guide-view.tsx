@@ -3,6 +3,7 @@ import { ArrowLeft, Search } from "lucide-react";
 import { PLANTS, fitFor, plantById, zoneSentence } from "@/data/guide";
 import { useGrove } from "@/lib/grove-state";
 import { FitBadge } from "@/components/fit-badge";
+import { FamilyNote } from "@/components/family-note";
 
 export function GuideView() {
   const grove = useGrove();
@@ -102,6 +103,14 @@ export function GuideView() {
             ))}
           </ul>
         </section>
+
+        {open.id === "almond" ? (
+          <p className="max-w-2xl text-sm leading-relaxed text-ink">
+            See also Volume 11: Fruit Trees for chill hours, planting, and pollination partners.
+          </p>
+        ) : null}
+
+        {open.id === "black-walnut" ? <FamilyNote /> : null}
 
         <section className="max-w-2xl rounded-card bg-moss-soft p-4">
           <h2 className="font-display text-xl text-moss-deep">What to buy</h2>

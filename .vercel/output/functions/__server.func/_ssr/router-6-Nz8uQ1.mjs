@@ -2,8 +2,8 @@ import { i as __toESM, n as __exportAll } from "../_runtime.mjs";
 import { K as require_react, _ as createFileRoute, b as require_jsx_runtime, d as Scripts, f as HeadContent, g as lazyRouteComponent, h as Outlet, m as createRouter, v as createRootRoute, y as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DtMRG_d6.js
-var router_DtMRG_d6_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
+//#region node_modules/.nitro/vite/services/ssr/assets/router-6-Nz8uQ1.js
+var router_6_Nz8uQ1_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var FALLBACK_MESSAGE = "An unexpected error occurred. Try reloading the page.";
@@ -331,8 +331,8 @@ function PreviewHostBridge() {
 	}, [router]);
 	return null;
 }
-var styles_default = "/assets/styles-B22izVvv.css";
-var APP_NAME = "Nut Grove";
+var styles_default = "/assets/styles-DQZazteW.css";
+var APP_NAME = "Nut Trees: Nut Grove";
 var Route$1 = createRootRoute({
 	head: () => ({
 		meta: [
@@ -385,7 +385,7 @@ var Route$1 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter = () => import("./routes-BruKks2r.mjs");
+var $$splitComponentImporter = () => import("./routes-Bn0MERXa.mjs");
 var rootRouteChildren = { IndexRoute: createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") }).update({
 	id: "/",
 	path: "/",
@@ -400,4 +400,4 @@ function getRouter() {
 	});
 }
 //#endregion
-export { getRouter, router_DtMRG_d6_exports as t };
+export { getRouter, router_6_Nz8uQ1_exports as t };

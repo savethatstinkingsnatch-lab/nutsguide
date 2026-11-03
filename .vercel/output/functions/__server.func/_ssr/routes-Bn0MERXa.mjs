@@ -1,7 +1,7 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as CloudSun, c as ArrowLeft, i as Search, n as Sprout, o as CalendarRange, r as Shovel, s as BookOpen } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BruKks2r.js
+import { a as Search, c as Compass, d as BookOpen, f as ArrowLeft, i as Shield, l as CloudSun, n as Sprout, o as Library, r as Shovel, s as Info, u as CalendarRange } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Bn0MERXa.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var ZONES = [
@@ -199,7 +199,7 @@ var PLANTS = [
 		chill: "A real winter, not an arctic one and not a tropical one.",
 		pollination: "Not self-fertile. Plant two different Chinese cultivars within about 100 feet. One tree is shade, not an orchard.",
 		needsPartner: true,
-		harvest: "Fall, when the spiny burrs split. Wear gloves. Good nuts feel heavy. Cure them cool and airy — they store more like apples than like walnuts.",
+		harvest: "Fall, when the spiny burrs split. Wear gloves. Good nuts feel heavy. Chestnuts are fresh food, not dry nuts. Store them in the refrigerator (about 32 to 40°F) in a bag with a few holes, and use them within a few weeks, or freeze them. Throw out any that are moldy inside.",
 		startHere: "The classic beginner tree where winters are real and you can give it a partner and a dry root run.",
 		steps: [
 			"Test drainage before you buy. Fill a hole with water. If it is still there the next day, choose another spot.",
@@ -210,7 +210,7 @@ var PLANTS = [
 		pitfalls: [
 			"A single tree. Chestnuts do not pollinate themselves.",
 			"A soggy planting hole.",
-			"Horse chestnut and buckeye are different plants. They are not the edible chestnut."
+			"Horse chestnut and buckeye are POISONOUS look-alikes. Edible chestnuts grow in a husk covered with sharp, dense spines like a hedgehog, usually 2 to 3 nuts per husk, and each nut is flat on one side with a pointed tip and a little tassel. Buckeye and horse chestnut husks are leathery with a few blunt bumps or none, usually hold one round, glossy nut with no point, and have leaves shaped like a hand (5 to 7 leaflets from one point). If you are not sure, do not eat it."
 		],
 		buy: "Two named Chinese cultivars, or blight-resistant hybrids sold as such. American chestnuts still die of blight unless you are in a restoration program."
 	},
@@ -259,7 +259,8 @@ var PLANTS = [
 		pitfalls: [
 			"Juglone. Tomatoes, apples, blueberries, and many ornamentals sulk or die inside the root zone.",
 			"Planting it ten feet from the house. It will not stay ten feet.",
-			"Expecting a quick crop from a seedling."
+			"Expecting a quick crop from a seedling.",
+			"Pets and horses: Keep dogs away from fallen and moldy walnuts and hulls. Mold on them can cause shaking and seizures. Never use black walnut wood shavings for horse bedding. They can cause laminitis (painful hoof inflammation)."
 		],
 		buy: "A grafted cultivar for earlier nuts and a known shell. A seedling is fine for wildlife if you can wait."
 	},
@@ -295,7 +296,7 @@ var PLANTS = [
 		soil: "Deep and drained. They decline in shallow or waterlogged ground.",
 		water: "Regular deep water for the first years, and while nuts fill if the summer is dry.",
 		chill: "Several hundred hours, plus a late-leafing habit if your spring is treacherous.",
-		pollination: "Many cultivars set a partial crop alone. A second one that sheds pollen at the right time yields more. Ask which pair overlaps.",
+		pollination: "Walnut trees usually release pollen and have ready female flowers at different times, so one tree often pollinates itself poorly. Many cultivars set a partial crop alone. A second cultivar that sheds pollen when the first one's female flowers are ready gives more nuts. Ask the nursery which pair overlaps.",
 		needsPartner: false,
 		harvest: "Hulls split in fall. Remove them promptly and dry the nuts until the kernel snaps, not bends.",
 		startHere: "A good home walnut where springs are not a frost trap and summers are not a steam bath.",
@@ -406,7 +407,8 @@ var PLANTS = [
 		pitfalls: [
 			"Trusting a zone number in a humid climate. The zone can match and the sky still will not.",
 			"A low spot that frosts in spring. Almonds bloom with the peaches, sometimes earlier.",
-			"Leaving hulls in a wet pile."
+			"Leaving hulls in a wet pile.",
+			"Bitter almonds (and apricot and peach kernels) contain chemicals that make cyanide. Eat only sweet almonds sold as food. Never eat a nut from an almond tree whose nuts taste bitter."
 		],
 		buy: "A pair chosen for your chill hours, from a nursery that knows your valley. “All-in-One” and similar self-fertile trees are the exception, not the rule."
 	},
@@ -772,7 +774,7 @@ var PLANTING_LESSONS = [
 	},
 	{
 		title: "Planting day is quiet work",
-		body: "Set the tree at the same depth it grew in the nursery. Do not bury the graft union, and do not leave roots sitting proud of the soil. Water it in so the soil settles against the roots. Stake only if the site is truly windy, and remove the stake after a year. A tree that cannot move does not grow a strong trunk."
+		body: "Set the tree at the same depth it grew in the nursery. Do not bury the graft union, and do not leave roots sitting proud of the soil. Water it in so the soil settles against the roots. Stake only if the site is truly windy, and remove the stake after a year. A tree that cannot move does not grow a strong trunk. See also Volume 11: Fruit Trees for chill hours, planting, and pollination partners."
 	},
 	{
 		title: "The first three years are about roots",
@@ -835,10 +837,14 @@ function sanitize(raw) {
 			"tropical"
 		].includes(o.climate) ? o.climate : base.climate,
 		view: [
+			"start",
 			"climate",
 			"guide",
 			"planting",
 			"seasons",
+			"safety",
+			"glossary",
+			"about",
 			"plan"
 		].includes(o.view) ? o.view : base.view,
 		selected: Array.isArray(o.selected) ? o.selected.filter((id) => typeof id === "string") : [],
@@ -1144,6 +1150,18 @@ function ClimateView() {
 		]
 	});
 }
+function FamilyNote() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
+		className: "max-w-2xl rounded-card border border-amber bg-amber-soft p-4",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+			className: "font-display text-xl text-ink",
+			children: "What worked for us"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "mt-2 text-sm leading-relaxed text-ink",
+			children: "What worked for us (a family tradition, not proven): Every early fall, our family set black walnuts along the edges of the basement. We believe they kept bugs down. When the cold came, we picked them all up so they would not mold or rot. We have no scientific proof that this works. It is just something our family does."
+		})]
+	});
+}
 function GuideView() {
 	const { zone, climate, openId, openPlant, toggleSelected, selected } = useGrove();
 	const [query, setQuery] = (0, import_react.useState)("");
@@ -1268,6 +1286,11 @@ function GuideView() {
 					className: "mt-3 flex max-w-2xl list-disc flex-col gap-2 pl-5 text-sm leading-relaxed text-ink-soft",
 					children: open.pitfalls.map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: p }, p))
 				})] }),
+				open.id === "almond" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "max-w-2xl text-sm leading-relaxed text-ink",
+					children: "See also Volume 11: Fruit Trees for chill hours, planting, and pollination partners."
+				}) : null,
+				open.id === "black-walnut" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FamilyNote, {}) : null,
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 					className: "max-w-2xl rounded-card bg-moss-soft p-4",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
@@ -1608,7 +1631,181 @@ function PlanView() {
 		]
 	});
 }
+var START_STEPS = [
+	"Find your winter zone and climate in this app.",
+	"Pick a nut marked “Grow here”.",
+	"Buy named, grafted plants, and a partner if the plant needs one.",
+	"Test drainage before you dig.",
+	"Water deeply the first two summers.",
+	"Be patient: most nut trees take years to bear. Peanuts take one summer.",
+	"Dry your harvest fully and read Stay Safe before you eat or share."
+];
+var SAFETY = [
+	{
+		title: "Mold",
+		body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out. Dry nuts fully and store them cool and dry."
+	},
+	{
+		title: "Allergies",
+		body: "Tree nut and peanut allergies can be severe. Ask before you share. Label gifts."
+	},
+	{
+		title: "Storage",
+		body: "Shelled nuts go rancid. Keep them in sealed jars in the refrigerator for months or the freezer for a year or more. Dry nuts in the shell keep longer in a cool, dry place."
+	},
+	{
+		title: "Acorns",
+		body: "Oak acorns are edible only after the bitter tannins are soaked out. Crack and grind them, then soak in changes of water until the water stays clear and they no longer taste bitter. Never eat raw bitter acorns."
+	},
+	{
+		title: "Ginkgo",
+		body: "The fruit smells bad and can irritate skin like poison ivy. Wear gloves. Eat only a few cooked ginkgo nuts at a time. Never eat them raw, and do not give them to young children."
+	},
+	{
+		title: "Cashew",
+		body: "Never crack raw cashew shells. See the cashew page."
+	},
+	{
+		title: "Wild nuts",
+		body: "Never eat a wild nut you cannot identify for certain."
+	}
+];
+var GLOSSARY = [
+	{
+		term: "Cultivar",
+		meaning: "A named variety, like Kanza pecan."
+	},
+	{
+		term: "Grafted",
+		meaning: "A named variety joined onto a root. It bears sooner and grows true."
+	},
+	{
+		term: "Seedling",
+		meaning: "Grown from a nut. It's slower, and you can't be sure what nuts it will make."
+	},
+	{
+		term: "Pollinizer",
+		meaning: "The partner tree that supplies pollen."
+	},
+	{
+		term: "Type I / Type II",
+		meaning: "Pecans that shed pollen first, or have female flowers ready first."
+	},
+	{
+		term: "Chill hours",
+		meaning: "Winter hours between about 32 and 45°F that a tree needs before it blooms."
+	},
+	{
+		term: "Juglone",
+		meaning: "A chemical from walnut roots and husks that harms some plants."
+	},
+	{
+		term: "Aflatoxin",
+		meaning: "A poison made by some molds on nuts."
+	},
+	{
+		term: "Tannin",
+		meaning: "The bitter part of acorns."
+	},
+	{
+		term: "Hull and husk",
+		meaning: "The outer cover around the shell."
+	}
+];
+function StartView() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "flex max-w-2xl flex-col gap-6",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "text-sm font-medium tracking-wide text-moss",
+			children: "Start here"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+			className: "mt-2 font-display text-4xl text-ink",
+			children: "New to nuts?"
+		})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+			className: "flex flex-col gap-3",
+			children: START_STEPS.map((step, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+				className: "flex gap-3 text-sm leading-relaxed text-ink",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+					className: "font-display text-amber",
+					children: [i + 1, "."]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: step })]
+			}, step))
+		})]
+	});
+}
+function SafetyView() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "flex max-w-2xl flex-col gap-6",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "text-sm font-medium tracking-wide text-moss",
+				children: "Before you eat or share"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				className: "mt-2 font-display text-4xl text-ink",
+				children: "Stay safe with nuts"
+			})] }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+				className: "flex flex-col gap-4",
+				children: SAFETY.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+					className: "rounded-card border border-line bg-paper p-4",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						className: "font-display text-xl text-ink",
+						children: item.title
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-2 text-sm leading-relaxed text-ink-soft",
+						children: item.body
+					})]
+				}, item.title))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FamilyNote, {})
+		]
+	});
+}
+function GlossaryView() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "flex max-w-2xl flex-col gap-6",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "text-sm font-medium tracking-wide text-moss",
+			children: "Words the nursery uses"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+			className: "mt-2 font-display text-4xl text-ink",
+			children: "Glossary"
+		})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dl", {
+			className: "flex flex-col gap-3",
+			children: GLOSSARY.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "border-t border-line pt-3",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+					className: "font-medium text-ink",
+					children: item.term
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+					className: "mt-1 text-sm leading-relaxed text-ink-soft",
+					children: item.meaning
+				})]
+			}, item.term))
+		})]
+	});
+}
+function AboutView() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "flex max-w-2xl flex-col gap-4",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "text-sm font-medium tracking-wide text-moss",
+			children: "About and disclaimer"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+			className: "mt-2 font-display text-4xl text-ink",
+			children: "About and disclaimer"
+		})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "text-sm leading-relaxed text-ink-soft",
+			children: "This pocket guide is for learning. Check your local county extension office for advice in your area. Never eat a wild nut or plant you cannot identify for certain. If someone may have eaten a poisonous plant, call Poison Control at 1-800-222-1222. For pets, call your vet. Blue and the Awesome Dudes are not responsible for illness, injury, or crop loss. Part of The Education Revolution pocket guide series."
+		})]
+	});
+}
 var NAV = [
+	{
+		id: "start",
+		label: "Start",
+		icon: Compass
+	},
 	{
 		id: "climate",
 		label: "Climate",
@@ -1630,6 +1827,21 @@ var NAV = [
 		icon: CalendarRange
 	},
 	{
+		id: "safety",
+		label: "Stay safe",
+		icon: Shield
+	},
+	{
+		id: "glossary",
+		label: "Glossary",
+		icon: Library
+	},
+	{
+		id: "about",
+		label: "About",
+		icon: Info
+	},
+	{
 		id: "plan",
 		label: "My plan",
 		icon: Sprout
@@ -1649,13 +1861,24 @@ function Shell() {
 						className: "flex items-center justify-between gap-3",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "min-w-0",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "font-display text-xl leading-none text-ink",
-								children: "Nut Grove"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-1 text-xs text-ink-soft",
-								children: "A beginner’s climate guide to growing nuts"
-							})]
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "font-display text-xl leading-none text-ink",
+									children: "Nut Grove"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-1 text-xs leading-relaxed text-ink-soft",
+									children: "A beginner’s climate guide to growing nuts"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-1 text-xs leading-relaxed text-ink-soft",
+									children: "The Education Revolution Pocket Guide, Volume 17: Nut Trees"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-xs leading-relaxed text-ink-soft",
+									children: "by Blue and the Awesome Dudes"
+								})
+							]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
 							onClick: () => setView("climate"),
@@ -1697,16 +1920,23 @@ function Shell() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
 				className: "mx-auto max-w-3xl px-4 py-8",
 				children: [
+					view === "start" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StartView, {}) : null,
 					view === "climate" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ClimateView, {}) : null,
 					view === "guide" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GuideView, {}) : null,
 					view === "planting" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PlantingView, {}) : null,
 					view === "seasons" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SeasonsView, {}) : null,
+					view === "safety" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SafetyView, {}) : null,
+					view === "glossary" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GlossaryView, {}) : null,
+					view === "about" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutView, {}) : null,
 					view === "plan" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PlanView, {}) : null
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
 				className: "mx-auto max-w-3xl px-4 pt-4 pb-12 text-xs leading-relaxed text-ink-soft",
-				children: "A field guide for home growers, not a substitute for your local extension office. Cultivar lists change, and a frost pocket in your own yard can override a zone map."
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A field guide for home growers, not a substitute for your local extension office. Cultivar lists change, and a frost pocket in your own yard can override a zone map." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mt-2",
+					children: "Privacy: This guide does not collect your name, email, or any personal information. Your planting plan is saved only on your own device."
+				})]
 			})
 		]
 	});

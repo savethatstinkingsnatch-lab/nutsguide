@@ -56,7 +56,17 @@ function sanitize(raw: unknown): GroveState {
   const climate = climates.includes(o.climate as ClimateId)
     ? (o.climate as ClimateId)
     : base.climate;
-  const views: ViewId[] = ["climate", "guide", "planting", "seasons", "plan"];
+  const views: ViewId[] = [
+    "start",
+    "climate",
+    "guide",
+    "planting",
+    "seasons",
+    "safety",
+    "glossary",
+    "about",
+    "plan",
+  ];
   const view = views.includes(o.view as ViewId) ? (o.view as ViewId) : base.view;
   const selected = Array.isArray(o.selected)
     ? o.selected.filter((id): id is string => typeof id === "string")

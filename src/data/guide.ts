@@ -10,7 +10,16 @@ export type Affinity = "loves" | "ok" | "struggles" | "no";
 
 export type Fit = "grow" | "stretch" | "skip";
 
-export type ViewId = "climate" | "guide" | "planting" | "seasons" | "plan";
+export type ViewId =
+  | "start"
+  | "climate"
+  | "guide"
+  | "planting"
+  | "seasons"
+  | "safety"
+  | "glossary"
+  | "about"
+  | "plan";
 
 export type NutPlant = {
   id: string;
@@ -211,7 +220,7 @@ export const PLANTS: NutPlant[] = [
       "Not self-fertile. Plant two different Chinese cultivars within about 100 feet. One tree is shade, not an orchard.",
     needsPartner: true,
     harvest:
-      "Fall, when the spiny burrs split. Wear gloves. Good nuts feel heavy. Cure them cool and airy — they store more like apples than like walnuts.",
+      "Fall, when the spiny burrs split. Wear gloves. Good nuts feel heavy. Chestnuts are fresh food, not dry nuts. Store them in the refrigerator (about 32 to 40°F) in a bag with a few holes, and use them within a few weeks, or freeze them. Throw out any that are moldy inside.",
     startHere:
       "The classic beginner tree where winters are real and you can give it a partner and a dry root run.",
     steps: [
@@ -223,7 +232,7 @@ export const PLANTS: NutPlant[] = [
     pitfalls: [
       "A single tree. Chestnuts do not pollinate themselves.",
       "A soggy planting hole.",
-      "Horse chestnut and buckeye are different plants. They are not the edible chestnut.",
+      "Horse chestnut and buckeye are POISONOUS look-alikes. Edible chestnuts grow in a husk covered with sharp, dense spines like a hedgehog, usually 2 to 3 nuts per husk, and each nut is flat on one side with a pointed tip and a little tassel. Buckeye and horse chestnut husks are leathery with a few blunt bumps or none, usually hold one round, glossy nut with no point, and have leaves shaped like a hand (5 to 7 leaflets from one point). If you are not sure, do not eat it.",
     ],
     buy: "Two named Chinese cultivars, or blight-resistant hybrids sold as such. American chestnuts still die of blight unless you are in a restoration program.",
   },
@@ -275,6 +284,7 @@ export const PLANTS: NutPlant[] = [
       "Juglone. Tomatoes, apples, blueberries, and many ornamentals sulk or die inside the root zone.",
       "Planting it ten feet from the house. It will not stay ten feet.",
       "Expecting a quick crop from a seedling.",
+      "Pets and horses: Keep dogs away from fallen and moldy walnuts and hulls. Mold on them can cause shaking and seizures. Never use black walnut wood shavings for horse bedding. They can cause laminitis (painful hoof inflammation).",
     ],
     buy: "A grafted cultivar for earlier nuts and a known shell. A seedling is fine for wildlife if you can wait.",
   },
@@ -311,7 +321,7 @@ export const PLANTS: NutPlant[] = [
     water: "Regular deep water for the first years, and while nuts fill if the summer is dry.",
     chill: "Several hundred hours, plus a late-leafing habit if your spring is treacherous.",
     pollination:
-      "Many cultivars set a partial crop alone. A second one that sheds pollen at the right time yields more. Ask which pair overlaps.",
+      "Walnut trees usually release pollen and have ready female flowers at different times, so one tree often pollinates itself poorly. Many cultivars set a partial crop alone. A second cultivar that sheds pollen when the first one's female flowers are ready gives more nuts. Ask the nursery which pair overlaps.",
     needsPartner: false,
     harvest: "Hulls split in fall. Remove them promptly and dry the nuts until the kernel snaps, not bends.",
     startHere:
@@ -429,6 +439,7 @@ export const PLANTS: NutPlant[] = [
       "Trusting a zone number in a humid climate. The zone can match and the sky still will not.",
       "A low spot that frosts in spring. Almonds bloom with the peaches, sometimes earlier.",
       "Leaving hulls in a wet pile.",
+      "Bitter almonds (and apricot and peach kernels) contain chemicals that make cyanide. Eat only sweet almonds sold as food. Never eat a nut from an almond tree whose nuts taste bitter.",
     ],
     buy: "A pair chosen for your chill hours, from a nursery that knows your valley. “All-in-One” and similar self-fertile trees are the exception, not the rule.",
   },
@@ -850,7 +861,7 @@ export const PLANTING_LESSONS: { title: string; body: string }[] = [
   },
   {
     title: "Planting day is quiet work",
-    body: "Set the tree at the same depth it grew in the nursery. Do not bury the graft union, and do not leave roots sitting proud of the soil. Water it in so the soil settles against the roots. Stake only if the site is truly windy, and remove the stake after a year. A tree that cannot move does not grow a strong trunk.",
+    body: "Set the tree at the same depth it grew in the nursery. Do not bury the graft union, and do not leave roots sitting proud of the soil. Water it in so the soil settles against the roots. Stake only if the site is truly windy, and remove the stake after a year. A tree that cannot move does not grow a strong trunk. See also Volume 11: Fruit Trees for chill hours, planting, and pollination partners.",
   },
   {
     title: "The first three years are about roots",

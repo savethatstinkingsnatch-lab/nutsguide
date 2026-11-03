@@ -1,4 +1,14 @@
-import { BookOpen, CalendarRange, CloudSun, Shovel, Sprout } from "lucide-react";
+import {
+  BookOpen,
+  CalendarRange,
+  CloudSun,
+  Compass,
+  Info,
+  Library,
+  Shield,
+  Shovel,
+  Sprout,
+} from "lucide-react";
 import type { ViewId } from "@/data/guide";
 import { climateById } from "@/data/guide";
 import { GroveProvider, useGrove } from "@/lib/grove-state";
@@ -7,12 +17,17 @@ import { GuideView } from "@/components/guide-view";
 import { PlantingView } from "@/components/planting-view";
 import { SeasonsView } from "@/components/seasons-view";
 import { PlanView } from "@/components/plan-view";
+import { AboutView, GlossaryView, SafetyView, StartView } from "@/components/pages-view";
 
 const NAV: { id: ViewId; label: string; icon: typeof CloudSun }[] = [
+  { id: "start", label: "Start", icon: Compass },
   { id: "climate", label: "Climate", icon: CloudSun },
   { id: "guide", label: "Field guide", icon: BookOpen },
   { id: "planting", label: "Planting", icon: Shovel },
   { id: "seasons", label: "Seasons", icon: CalendarRange },
+  { id: "safety", label: "Stay safe", icon: Shield },
+  { id: "glossary", label: "Glossary", icon: Library },
+  { id: "about", label: "About", icon: Info },
   { id: "plan", label: "My plan", icon: Sprout },
 ];
 
@@ -27,7 +42,13 @@ function Shell() {
           <div className="flex items-center justify-between gap-3">
             <div className="min-w-0">
               <p className="font-display text-xl leading-none text-ink">Nut Grove</p>
-              <p className="mt-1 text-xs text-ink-soft">A beginner’s climate guide to growing nuts</p>
+              <p className="mt-1 text-xs leading-relaxed text-ink-soft">
+                A beginner’s climate guide to growing nuts
+              </p>
+              <p className="mt-1 text-xs leading-relaxed text-ink-soft">
+                The Education Revolution Pocket Guide, Volume 17: Nut Trees
+              </p>
+              <p className="text-xs leading-relaxed text-ink-soft">by Blue and the Awesome Dudes</p>
             </div>
             <button
               type="button"
@@ -63,15 +84,25 @@ function Shell() {
         </div>
       </header>
       <main className="mx-auto max-w-3xl px-4 py-8">
+        {view === "start" ? <StartView /> : null}
         {view === "climate" ? <ClimateView /> : null}
         {view === "guide" ? <GuideView /> : null}
         {view === "planting" ? <PlantingView /> : null}
         {view === "seasons" ? <SeasonsView /> : null}
+        {view === "safety" ? <SafetyView /> : null}
+        {view === "glossary" ? <GlossaryView /> : null}
+        {view === "about" ? <AboutView /> : null}
         {view === "plan" ? <PlanView /> : null}
       </main>
       <footer className="mx-auto max-w-3xl px-4 pt-4 pb-12 text-xs leading-relaxed text-ink-soft">
-        A field guide for home growers, not a substitute for your local extension office.
-        Cultivar lists change, and a frost pocket in your own yard can override a zone map.
+        <p>
+          A field guide for home growers, not a substitute for your local extension office.
+          Cultivar lists change, and a frost pocket in your own yard can override a zone map.
+        </p>
+        <p className="mt-2">
+          Privacy: This guide does not collect your name, email, or any personal information. Your
+          planting plan is saved only on your own device.
+        </p>
       </footer>
     </div>
   );
