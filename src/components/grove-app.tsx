@@ -5,6 +5,7 @@ import {
   Compass,
   Info,
   Library,
+  ScrollText,
   Shield,
   Shovel,
   Sprout,
@@ -17,7 +18,7 @@ import { GuideView } from "@/components/guide-view";
 import { PlantingView } from "@/components/planting-view";
 import { SeasonsView } from "@/components/seasons-view";
 import { PlanView } from "@/components/plan-view";
-import { AboutView, GlossaryView, SafetyView, StartView } from "@/components/pages-view";
+import { AboutView, GlossaryView, SafetyView, SourcesView, StartView } from "@/components/pages-view";
 
 const NAV: { id: ViewId; label: string; icon: typeof CloudSun }[] = [
   { id: "start", label: "Start", icon: Compass },
@@ -28,6 +29,7 @@ const NAV: { id: ViewId; label: string; icon: typeof CloudSun }[] = [
   { id: "safety", label: "Stay safe", icon: Shield },
   { id: "glossary", label: "Glossary", icon: Library },
   { id: "about", label: "About", icon: Info },
+  { id: "sources", label: "Sources", icon: ScrollText },
   { id: "plan", label: "My plan", icon: Sprout },
 ];
 
@@ -92,6 +94,7 @@ function Shell() {
         {view === "safety" ? <SafetyView /> : null}
         {view === "glossary" ? <GlossaryView /> : null}
         {view === "about" ? <AboutView /> : null}
+        {view === "sources" ? <SourcesView /> : null}
         {view === "plan" ? <PlanView /> : null}
       </main>
       <footer className="mx-auto max-w-3xl px-4 pt-4 pb-12 text-xs leading-relaxed text-ink-soft">

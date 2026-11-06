@@ -67,9 +67,11 @@ export function ClimateView() {
         <div>
           <h2 className="font-display text-3xl text-ink">Your winter low</h2>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-soft">
-            Use a typical cold night, not the record. These bands are the USDA winter
-            zones. They work outside the United States too — match the temperature, not
-            the country. If you already know your zone, tap it.
+            These are USDA hardiness zones: the average annual extreme minimum
+            temperature, in 10°F bands. Half-zones (a and b) split each band by 5°F. This
+            guide uses the full zone only. Match the temperature, not the country. The
+            current map averages 1991–2020. It is not the worst night on record, and it
+            is not a promise that a plant will survive a colder snap.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-9" role="radiogroup" aria-label="Winter zone">
@@ -97,8 +99,21 @@ export function ClimateView() {
           })}
         </div>
         <p className="rounded-xl bg-moss-soft px-4 py-3 text-sm text-moss-deep">
-          <span className="font-medium">Zone {zone}.</span> {zoneInfo.low}. {zoneInfo.hint}.
-          That is only rule one — survival of the wood.
+          <span className="font-medium">Zone {zone}.</span> {zoneInfo.low}, the average
+          annual extreme minimum. A 10°F band, not a guarantee the wood will live through
+          every winter, a frost pocket, or the wrong cultivar.
+        </p>
+        <p className="text-xs leading-relaxed text-ink-soft">
+          Source:{" "}
+          <a
+            className="underline"
+            href="https://planthardiness.ars.usda.gov/pages/how-to-use-the-maps"
+            target="_blank"
+            rel="noreferrer"
+          >
+            USDA Plant Hardiness Zone Map, how to use the maps
+          </a>
+          .
         </p>
       </section>
 
@@ -146,8 +161,10 @@ export function ClimateView() {
           <h2 className="font-display text-3xl text-ink">What this sky can grow</h2>
           <p className="mt-2 text-sm text-ink-soft">
             Zone {zone}, {place.name.toLowerCase()}.{" "}
-            {grouped.find((g) => g.fit === "grow")?.plants.length ?? 0} clear matches. Saved
-            plants stay in your plan.
+            {grouped.find((g) => g.fit === "grow")?.plants.length ?? 0} clear matches on
+            this rough screen. Grow here, A stretch, and Skip are not a promise. Cultivar
+            and the spot in your yard can change the result. Saved plants stay in your
+            plan.
           </p>
         </div>
         {grouped.map(({ fit, plants }) => (

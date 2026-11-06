@@ -85,14 +85,15 @@ export function PlanView() {
         )}
         {plants.some((p) => p.id === "black-walnut" || p.id === "english-walnut") ? (
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-            Walnut note: keep these well away from the vegetable garden. Juglone from the
-            roots and husks stunts tomatoes, apples, and a long list of other plants.
+            Walnut note: juglone from black walnut commonly injures tomato, potato, pepper,
+            and eggplant near the roots. Many other crops tolerate it. Do not clear the
+            whole garden on a rumor. English walnut is a milder case.
           </p>
         ) : null}
         {plants.some((p) => p.id === "cashew") ? (
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink">
-            Cashew note: the raw shell oil blisters skin. Do not add this tree unless you
-            already know a safe way to process it.
+            Cashew note: do not shell or eat nuts from a home tree. The shell oil is
+            caustic, and safe kernel removal is a commercial process.
           </p>
         ) : null}
       </section>

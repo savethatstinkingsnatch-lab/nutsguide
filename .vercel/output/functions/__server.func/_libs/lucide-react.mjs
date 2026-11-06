@@ -245,6 +245,30 @@ var Library = createLucideIcon("library", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var ScrollText = createLucideIcon("scroll-text", [
+	["path", {
+		d: "M15 12h-5",
+		key: "r7krc0"
+	}],
+	["path", {
+		d: "M15 8h-5",
+		key: "1khuty"
+	}],
+	["path", {
+		d: "M19 17V5a2 2 0 0 0-2-2H4",
+		key: "zz82l3"
+	}],
+	["path", {
+		d: "M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3",
+		key: "1ph1d7"
+	}]
+]);
+/**
+* @license lucide-react v0.510.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Search = createLucideIcon("search", [["path", {
 	d: "m21 21-4.34-4.34",
 	key: "14j7rj"
@@ -329,4 +353,4 @@ var TriangleAlert = createLucideIcon("triangle-alert", [
 	}]
 ]);
 //#endregion
-export { Search as a, Compass as c, BookOpen as d, ArrowLeft as f, Shield as i, CloudSun as l, Sprout as n, Library as o, Shovel as r, Info as s, TriangleAlert as t, CalendarRange as u };
+export { Search as a, Info as c, CalendarRange as d, BookOpen as f, Shield as i, Compass as l, Sprout as n, ScrollText as o, ArrowLeft as p, Shovel as r, Library as s, TriangleAlert as t, CloudSun as u };

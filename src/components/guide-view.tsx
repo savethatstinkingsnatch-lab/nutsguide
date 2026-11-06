@@ -44,7 +44,10 @@ export function GuideView() {
           <div className="flex flex-wrap items-center gap-2">
             <FitBadge fit={fit} />
             <span className="text-xs text-ink-soft">
-              {open.form} · {open.difficulty} · zones {open.zoneMin}–{open.zoneMax}
+              {open.form} · {open.difficulty}
+              {open.ratedByZone === false
+                ? " · not rated by winter zone"
+                : ` · zones ${open.zoneMin}–${open.zoneMax}, a rough screen`}
             </span>
           </div>
           <h1 className="mt-3 font-display text-4xl text-ink">{open.name}</h1>

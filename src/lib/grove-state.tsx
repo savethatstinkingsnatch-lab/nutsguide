@@ -65,6 +65,7 @@ function sanitize(raw: unknown): GroveState {
     "safety",
     "glossary",
     "about",
+    "sources",
     "plan",
   ];
   const view = views.includes(o.view as ViewId) ? (o.view as ViewId) : base.view;

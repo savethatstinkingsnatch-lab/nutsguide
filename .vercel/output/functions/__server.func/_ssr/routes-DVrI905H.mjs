@@ -1,14 +1,14 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as Search, c as Compass, d as BookOpen, f as ArrowLeft, i as Shield, l as CloudSun, n as Sprout, o as Library, r as Shovel, s as Info, u as CalendarRange } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-Bn0MERXa.js
+import { a as Search, c as Info, d as CalendarRange, f as BookOpen, i as Shield, l as Compass, n as Sprout, o as ScrollText, p as ArrowLeft, r as Shovel, s as Library, u as CloudSun } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DVrI905H.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var ZONES = [
 	{
 		zone: 3,
-		low: "Colder than −30°F",
-		hint: "Brutal winters"
+		low: "−40 to −30°F",
+		hint: "10°F band"
 	},
 	{
 		zone: 4,
@@ -47,8 +47,8 @@ var ZONES = [
 	},
 	{
 		zone: 11,
-		low: "Warmer than 40°F",
-		hint: "Almost never freezes"
+		low: "40 to 50°F",
+		hint: "10°F band"
 	}
 ];
 var CLIMATES = [
@@ -94,7 +94,7 @@ var CLIMATE_RULES = [
 		n: "01",
 		title: "Winter low",
 		kicker: "Will the wood survive?",
-		body: "A winter zone is the typical coldest night, not the worst night in fifty years. “Zone 7” on a tag means the wood usually lives through 0 to 10°F. A frost pocket, a brand-new planting, or the wrong cultivar can still die inside that zone."
+		body: "The USDA map uses the average annual extreme minimum temperature, not the coldest night on record and not a forecast. Zones are 10°F wide. Half-zones, marked a and b, split that into 5°F. Zone 3 is −40 to −30°F. Zone 7 is 0 to 10°F. Zone 11 is 40 to 50°F. A matching zone does not promise the plant will survive a colder snap, a frost pocket, or the wrong cultivar."
 	},
 	{
 		n: "02",
@@ -146,7 +146,7 @@ var PLANTS = [
 		spacing: "12–18 ft between bushes",
 		sun: "Full sun, at least 6 hours.",
 		soil: "Well-drained loam, pH about 6 to 7. Standing water kills them faster than cold.",
-		water: "A deep soak once a week in the first two dry summers. After that they tolerate short dry spells.",
+		water: "In the first two summers, water deeply when the soil under the mulch is dry. How often depends on rain and soil. Skip the daily sprinkle. Established bushes tolerate short dry spells.",
 		chill: "Roughly 800–1,200 hours. A frost-free winter is not enough.",
 		pollination: "Wind carries the pollen. Plant at least two different compatible cultivars. One bush almost never pollinates itself.",
 		needsPartner: true,
@@ -195,7 +195,7 @@ var PLANTS = [
 		spacing: "30–40 ft",
 		sun: "Full sun.",
 		soil: "Acid to neutral, about pH 5.5–6.5, and sharply drained. Heavy wet clay is the usual killer.",
-		water: "Water weekly the first two summers. Established trees want moisture while burrs fill, not a swamp.",
+		water: "While the tree is young, water deeply when the soil under the mulch is dry. Established trees want moisture while burrs fill, not a swamp. There is no fixed weekly schedule.",
 		chill: "A real winter, not an arctic one and not a tropical one.",
 		pollination: "Not self-fertile. Plant two different Chinese cultivars within about 100 feet. One tree is shade, not an orchard.",
 		needsPartner: true,
@@ -251,13 +251,13 @@ var PLANTS = [
 		harvest: "Fall. The green husk stains skin and clothes a dark brown. Hull them with gloves, then cure the nuts for several weeks.",
 		startHere: "Plant it only if you have acreage to spare and you like the idea of a tree that will still be huge when you are not.",
 		steps: [
-			"Site it well away from vegetables, apples, berries, and pines. The roots release juglone, which stunts them.",
+			"Do not plant tomatoes, peppers, potatoes, or eggplant inside the root zone. Black walnut makes juglone, which commonly injures those crops. Many other vegetables tolerate it. Extension lists of further sensitive plants are observational and do not all agree, so check a current list before you clear the whole garden.",
 			"Plant a grafted named tree if you want nuts sooner and shells a bit kinder.",
 			"Water deeply the first summers and keep mowers off the bark.",
 			"Plan the harvest mess: husks stain driveways, hands, and clothes."
 		],
 		pitfalls: [
-			"Juglone. Tomatoes, apples, blueberries, and many ornamentals sulk or die inside the root zone.",
+			"Juglone commonly injures tomato, potato, pepper, and eggplant near the roots. Bean, beet, carrot, corn, onion, and squash are often listed as tolerant. Do not treat every garden plant as sensitive. Lists beyond those crops are incomplete and sometimes conflict.",
 			"Planting it ten feet from the house. It will not stay ten feet.",
 			"Expecting a quick crop from a seedling.",
 			"Pets and horses: Keep dogs away from fallen and moldy walnuts and hulls. Mold on them can cause shaking and seizures. Never use black walnut wood shavings for horse bedding. They can cause laminitis (painful hoof inflammation)."
@@ -309,7 +309,7 @@ var PLANTS = [
 		pitfalls: [
 			"An early-leafing tree in a frost pocket. The wood lives; the crop dies in spring.",
 			"Wet, heavy soil.",
-			"Some juglone, milder than black walnut, but still unfriendly to tomatoes under the canopy."
+			"English walnut makes less juglone than black walnut. Tomatoes may still struggle directly underneath. That is not a reason to assume the rest of the garden will fail."
 		],
 		buy: "A named cultivar matched to your chill and frost timing. A nut from a snack bag will not come true, and it may not suit your spring."
 	},
@@ -566,8 +566,9 @@ var PLANTS = [
 		form: "Annual",
 		tagline: "Not a tree. A summer legume that buries its own crop — and you can eat it the same year.",
 		difficulty: "Beginner",
-		zoneMin: 6,
-		zoneMax: 11,
+		zoneMin: 0,
+		zoneMax: 0,
+		ratedByZone: false,
 		affinity: {
 			cold: "no",
 			temperate: "ok",
@@ -577,12 +578,12 @@ var PLANTS = [
 			tropical: "ok"
 		},
 		climateWhy: {
-			cold: "The frost-free season is too short. Peanuts die with frost, and they still need a long warm summer.",
-			temperate: "Early Spanish or Valencia types can work with about 120 frost-free days and sandy soil. A cool summer is a stretch.",
-			mediterranean: "Fine if the soil is loose and you irrigate. They are not a dry-farm tree crop, because they are not a tree.",
-			humid: "The usual beginner peanut climate: warm, and willing, as long as the soil is sandy.",
-			subtropical: "Easy warmth. Wait until the soil is genuinely warm before you sow.",
-			tropical: "Possible. You still need loose soil and a harvest before the nuts sprout in the ground."
+			cold: "A short frost-free season is the problem, not the winter zone. Peanuts die at frost and still need months of warmth to mature.",
+			temperate: "Possible only with a long frost-free summer, loose soil, and an early type. A cool or short summer is a stretch. This is not a hardiness-zone yes.",
+			mediterranean: "Possible with irrigation, loose soil, and a long warm season. Dry ground and a short summer both fail them.",
+			humid: "A long, warm, frost-free season and sandy soil are the usual match. The winter zone number does not decide it.",
+			subtropical: "Warmth is easy. Still wait until the soil at 4 inches has stayed above 68°F for three days, with no cold front coming.",
+			tropical: "Warmth is there. You still need loose soil and a harvest before pods sprout in the ground."
 		},
 		years: "100–150 days, one summer",
 		size: "A low bush, 1–2 ft tall",
@@ -590,23 +591,23 @@ var PLANTS = [
 		sun: "Full sun.",
 		soil: "Sandy or loose loam, slightly acidic. If you cannot push a hand in, do not plant peanuts there.",
 		water: "Even moisture while pegs are forming, then ease off so you can lift the plants.",
-		chill: "None. They are an annual. Sow after the last frost, when soil is about 65°F.",
+		chill: "None. Do not use a winter zone. Sow when the soil at 4 inches has stayed above 68°F for three days and no cold front is expected, and only if the frost-free season is long enough for the type you plant.",
 		pollination: "Self-pollinating. After the yellow flower fades, a peg grows down into the soil and the pod forms underground.",
 		needsPartner: false,
 		harvest: "When leaves yellow, loosen the soil and lift the whole plant. Hang or rack the plants until the pods are fully dry, then store. Fresh undried peanuts spoil.",
 		startHere: "The one nut a beginner can sow and eat in the same year — if the summer is long and the soil is loose.",
 		steps: [
-			"Loosen a sandy bed after the soil has warmed. Cold, wet seed rots.",
+			"Loosen a sandy bed only after the soil at 4 inches has stayed above 68°F for three days, with no cold front in the forecast. The last-frost date alone is too early.",
 			"Sow raw planting seed, not roasted grocery peanuts.",
 			"When flowers fade, keep the soil loose so the pegs can bury themselves. You can hill a little soil around the stems.",
 			"Lift the whole plant at yellowing and dry it for weeks before you roast or store."
 		],
 		pitfalls: [
 			"Heavy clay. The pegs never bury, and you cannot lift the crop.",
-			"Planting too early.",
+			"Planting because the last frost date has passed, while the soil at 4 inches is still cool.",
 			"Roasting or sealing the pods before they are dry."
 		],
-		buy: "Raw seed peanuts sold for planting. Choose an early variety if your summer is only moderate."
+		buy: "Raw seed peanuts sold for planting, not a grafted plant. Match the type to the length of your frost-free season. An early type is the safer try where summer is only moderate."
 	},
 	{
 		id: "cashew",
@@ -630,8 +631,8 @@ var PLANTS = [
 			temperate: "Impossible.",
 			mediterranean: "Winter frost and the wrong rainfall pattern. No.",
 			humid: "If your humid climate still freezes, the tree dies. Frost-free humidity belongs under subtropical or tropical.",
-			subtropical: "Only the frost-free edge, and even then the shell is a handling hazard. Most subtropical yards should skip it.",
-			tropical: "The tree can grow. The raw shell still contains a caustic oil in the poison-ivy family. This is not a casual snack tree."
+			subtropical: "Only the frost-free edge, and even then do not shell or eat the nuts. Most subtropical yards should skip the tree.",
+			tropical: "The tree can grow where frost never comes. Do not shell or eat the nuts from it. Commercial processors handle the caustic shell oil. Home roasting is not a safe workaround."
 		},
 		years: "2–4 years in the tropics, from a grafted tree",
 		size: "20–40 ft",
@@ -642,20 +643,20 @@ var PLANTS = [
 		chill: "None. Any real frost is fatal.",
 		pollination: "Usually fruitful alone. Insects help.",
 		needsPartner: false,
-		harvest: "The nut hangs under a fleshy cashew apple. The raw shell oil blisters skin and is dangerous near eyes. Roast and process so the oil is driven off before a shell is cracked. Do not handle raw shells casually, and do not assume a home oven makes it safe.",
-		startHere: "Only in a truly frost-free climate, and only if you will treat the shell as a hazardous material, not as a walnut.",
+		harvest: "The nut hangs under a fleshy cashew apple. University of Florida extension tells homeowners not to shell or eat the nut from a home tree. The shell oil is poisonous and blisters skin. Safe kernel removal needs commercial equipment. Do not roast or crack the shells at home, indoors or out.",
+		startHere: "Only consider the tree in a truly frost-free climate, and do not plan on eating the nuts you grow. Leave the shell and the kernel to commercial processors.",
 		steps: [
 			"Confirm frost never reaches the planting spot. “Almost never” is not enough.",
-			"Plant a grafted tree in drained soil, with room and wind in mind.",
-			"Read a local extension guide on processing before the first crop. The pretty apple is not the dangerous part; the shell is.",
-			"Keep children and pets away from fresh nuts in the shell."
+			"Plant only if you accept that the nuts are not a home food project.",
+			"Do not shell, roast, or crack the nuts. The cashew apple is a separate fruit. The shell is the hazard.",
+			"Keep children and pets away from nuts in the shell."
 		],
 		pitfalls: [
-			"Treating the shell like any other nut shell. The oil blisters.",
+			"Trying to process the nut at home. Extension guidance says not to.",
 			"Any real frost.",
 			"Assuming a mild coastal winter is close enough because the zone number looks neighboring."
 		],
-		buy: "A grafted tree from a tropical nursery, and a processing method you have actually learned — not a guess on harvest day."
+		buy: "A grafted tree only if you want the tree itself in a frost-free climate. Do not buy it as a snack project."
 	}
 ];
 var CHECKLIST = [
@@ -721,7 +722,7 @@ var SEASONS = [
 				text: "If almonds or walnuts are flowering, look at the forecast. A frost pocket you chose in winter is the problem you cannot cover on a 40-foot tree.",
 				note: "Site was the defense. Cloth is only realistic on a young, short tree."
 			},
-			{ text: "Sow peanuts only after the soil is warm, about 65°F. Earlier seed just rots." },
+			{ text: "Sow peanuts only when the soil at 4 inches has stayed above 68°F for three days and no cold front is expected, and only if the frost-free season is long enough for that type. A date after the last frost is not enough." },
 			{ text: "Do not pile fertilizer on a newly planted tree. Water and weed competition matter more this year." }
 		]
 	},
@@ -730,7 +731,7 @@ var SEASONS = [
 		title: "Growing season",
 		when: "Leaves are fully out and nuts are sizing.",
 		tasks: [
-			{ text: "Water deeply about once a week in year one and two whenever rain does not. A light daily sprinkle trains shallow roots." },
+			{ text: "While a tree is young, check the soil. If it is dry under the mulch, water deeply. Rain, soil, and the age of the tree change how often. A light daily sprinkle trains shallow roots. Local extension guidance beats a calendar rule." },
 			{ text: "For pecans, pistachios, and walnuts, do not let the soil go dust-dry while kernels are filling." },
 			{ text: "Keep the peanut bed loose after flowering so the pegs can push into the ground." },
 			{ text: "Identify pests before you spray. Walnut husk maggots, borers, and aphids are different problems. Your local extension page beats a guess." },
@@ -745,7 +746,7 @@ var SEASONS = [
 			{ text: "Harvest promptly. Squirrels, jays, and mold are all on a shorter clock than you are." },
 			{ text: "Dry nuts until the kernel snaps. Macadamias, peanuts, and walnuts stored damp will mold or go rancid." },
 			{ text: "Wear gloves for black walnut husks and chestnut burrs. Walnut husk stain does not forgive." },
-			{ text: "Do not compost black walnut husks into the vegetable garden. Juglone rides along." },
+			{ text: "Do not mulch tomato, pepper, potato, or eggplant beds with fresh black walnut husks or chips. Juglone breaks down as material composts, so finished compost is not the same as fresh husks. If you are unsure, keep fresh husks out of those beds." },
 			{ text: "Write down what cropped, what froze, and what the squirrels took. Next year’s order depends on that note." },
 			{ text: "In mild climates this is also a planting season for container trees, while the soil is still warm and the top has not yet frozen." }
 		]
@@ -762,7 +763,7 @@ var PLANTING_LESSONS = [
 	},
 	{
 		title: "Assume you need two, until the entry says otherwise",
-		body: "Hazelnuts, chestnuts, pecans, almonds, and pistachios want a partner. The partner is a different cultivar, or in pistachios a male tree, not a second copy of the same plant. Wind does the carrying, so they do not need to touch, but they need to be in the same yard, not the next town."
+		body: "Hazelnuts, chestnuts, pecans, almonds, and pistachios want a partner. The partner is a different cultivar, or in pistachios a male tree, not a second copy of the same plant. Wind does the carrying, so they do not need to touch, but they need to be in the same yard, not the next town. Confirm the pair with the nursery or your county extension. Cultivar lists change, and this page is not a trial result."
 	},
 	{
 		title: "Run the drainage test",
@@ -770,7 +771,7 @@ var PLANTING_LESSONS = [
 	},
 	{
 		title: "Plant at the size it will be",
-		body: "The cute gallon pot becomes a pecan that shades the roof. Measure the mature spacing in the entry and walk it off before you dig. Keep black walnuts far from the vegetable garden because of juglone."
+		body: "The cute gallon pot becomes a pecan that shades the roof. Measure the mature spacing in the entry and walk it off before you dig. Keep black walnuts away from tomatoes, peppers, potatoes, and eggplant. Juglone can injure those. Many other vegetables tolerate it."
 	},
 	{
 		title: "Planting day is quiet work",
@@ -793,6 +794,11 @@ function plantById(id) {
 }
 function fitFor(plant, zone, climate) {
 	const aff = plant.affinity[climate];
+	if (plant.ratedByZone === false) {
+		if (aff === "no") return "skip";
+		if (aff === "loves") return "grow";
+		return "stretch";
+	}
 	const inZone = zone >= plant.zoneMin && zone <= plant.zoneMax;
 	const edge = zone >= plant.zoneMin - 1 && zone <= plant.zoneMax + 1;
 	if (aff === "no") return "skip";
@@ -803,9 +809,11 @@ function fitFor(plant, zone, climate) {
 	return "grow";
 }
 function zoneSentence(plant, zone) {
-	if (zone < plant.zoneMin) return `Zone ${zone} runs colder than the usual ${plant.zoneMin}–${plant.zoneMax} range.`;
-	if (zone > plant.zoneMax) return `Zone ${zone} is milder in winter than the usual ${plant.zoneMin}–${plant.zoneMax} range.`;
-	return `Zone ${zone} sits inside the usual ${plant.zoneMin}–${plant.zoneMax} range.`;
+	if (plant.ratedByZone === false) return "This is not a winter-zone rating. Peanuts are annuals. A long frost-free season and warm soil decide them, not how cold January gets.";
+	const range = `zones ${plant.zoneMin}–${plant.zoneMax}`;
+	if (zone < plant.zoneMin) return `Zone ${zone} is colder than the rough published range of ${range}. That range is a screen, not a guarantee, and the wrong cultivar can fail inside it too.`;
+	if (zone > plant.zoneMax) return `Zone ${zone} is milder in winter than the rough published range of ${range}. A match on paper can still fail if chill, heat, or harvest weather is wrong.`;
+	return `Zone ${zone} sits inside the rough published range of ${range}. Cultivar and the spot in your yard can change the result. A zone is not a promise against a colder snap.`;
 }
 function fitLabel(fit) {
 	if (fit === "grow") return "Grow here";
@@ -845,6 +853,7 @@ function sanitize(raw) {
 			"safety",
 			"glossary",
 			"about",
+			"sources",
 			"plan"
 		].includes(o.view) ? o.view : base.view,
 		selected: Array.isArray(o.selected) ? o.selected.filter((id) => typeof id === "string") : [],
@@ -992,7 +1001,7 @@ function ClimateView() {
 						children: "Your winter low"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-2 max-w-2xl text-sm leading-relaxed text-ink-soft",
-						children: "Use a typical cold night, not the record. These bands are the USDA winter zones. They work outside the United States too — match the temperature, not the country. If you already know your zone, tap it."
+						children: "These are USDA hardiness zones: the average annual extreme minimum temperature, in 10°F bands. Half-zones (a and b) split each band by 5°F. This guide uses the full zone only. Match the temperature, not the country. The current map averages 1991–2020. It is not the worst night on record, and it is not a promise that a plant will survive a colder snap."
 					})] }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "grid grid-cols-3 gap-2 sm:grid-cols-9",
@@ -1029,9 +1038,22 @@ function ClimateView() {
 							}),
 							" ",
 							zoneInfo.low,
-							". ",
-							zoneInfo.hint,
-							". That is only rule one — survival of the wood."
+							", the average annual extreme minimum. A 10°F band, not a guarantee the wood will live through every winter, a frost pocket, or the wrong cultivar."
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "text-xs leading-relaxed text-ink-soft",
+						children: [
+							"Source:",
+							" ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								className: "underline",
+								href: "https://planthardiness.ars.usda.gov/pages/how-to-use-the-maps",
+								target: "_blank",
+								rel: "noreferrer",
+								children: "USDA Plant Hardiness Zone Map, how to use the maps"
+							}),
+							"."
 						]
 					})
 				]
@@ -1092,7 +1114,7 @@ function ClimateView() {
 						".",
 						" ",
 						grouped.find((g) => g.fit === "grow")?.plants.length ?? 0,
-						" clear matches. Saved plants stay in your plan."
+						" clear matches on this rough screen. Grow here, A stretch, and Skip are not a promise. Cultivar and the spot in your yard can change the result. Saved plants stay in your plan."
 					]
 				})] }), grouped.map(({ fit, plants }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
@@ -1205,10 +1227,7 @@ function GuideView() {
 								open.form,
 								" · ",
 								open.difficulty,
-								" · zones ",
-								open.zoneMin,
-								"–",
-								open.zoneMax
+								open.ratedByZone === false ? " · not rated by winter zone" : ` · zones ${open.zoneMin}–${open.zoneMax}, a rough screen`
 							]
 						})]
 					}),
@@ -1399,42 +1418,60 @@ function GuideView() {
 function PlantingView() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "flex flex-col gap-8",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-			className: "max-w-2xl",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "text-sm font-medium tracking-wide text-moss",
-					children: "Planting primer"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-					className: "mt-2 font-display text-4xl text-ink",
-					children: "The same eight mistakes, every spring."
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-3 text-base leading-relaxed text-ink-soft",
-					children: "Species details live in the field guide. This is the part that stays true for almost every nut you will actually plant."
-				})
-			]
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
-			className: "flex max-w-2xl flex-col gap-6",
-			children: PLANTING_LESSONS.map((lesson, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-				className: "border-t border-line pt-6",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+				className: "max-w-2xl",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "font-display text-sm text-amber",
-						children: String(i + 1).padStart(2, "0")
+						className: "text-sm font-medium tracking-wide text-moss",
+						children: "Planting primer"
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "mt-1 font-display text-2xl text-ink",
-						children: lesson.title
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+						className: "mt-2 font-display text-4xl text-ink",
+						children: "The same eight mistakes, every spring."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-2 text-sm leading-relaxed text-ink-soft",
-						children: lesson.body
+						className: "mt-3 text-base leading-relaxed text-ink-soft",
+						children: "Species details live in the field guide. This is the part that stays true for almost every nut you will actually plant."
 					})
 				]
-			}, lesson.title))
-		})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+				className: "flex max-w-2xl flex-col gap-6",
+				children: PLANTING_LESSONS.map((lesson, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+					className: "border-t border-line pt-6",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "font-display text-sm text-amber",
+							children: String(i + 1).padStart(2, "0")
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "mt-1 font-display text-2xl text-ink",
+							children: lesson.title
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-2 text-sm leading-relaxed text-ink-soft",
+							children: lesson.body
+						})
+					]
+				}, lesson.title))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				className: "max-w-2xl text-xs leading-relaxed text-ink-soft",
+				children: [
+					"Pollination pairs are cultivar-specific. Confirm them with the nursery or your county extension. Juglone guidance follows",
+					" ",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						className: "underline",
+						href: "https://hort.extension.wisc.edu/articles/black-walnut-toxicity/",
+						target: "_blank",
+						rel: "noreferrer",
+						children: "Wisconsin Horticulture"
+					}),
+					", whose plant lists are observational and sometimes disagree."
+				]
+			})
+		]
 	});
 }
 function SeasonsView() {
@@ -1585,11 +1622,11 @@ function PlanView() {
 				}),
 				plants.some((p) => p.id === "black-walnut" || p.id === "english-walnut") ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft",
-					children: "Walnut note: keep these well away from the vegetable garden. Juglone from the roots and husks stunts tomatoes, apples, and a long list of other plants."
+					children: "Walnut note: juglone from black walnut commonly injures tomato, potato, pepper, and eggplant near the roots. Many other crops tolerate it. Do not clear the whole garden on a rumor. English walnut is a milder case."
 				}) : null,
 				plants.some((p) => p.id === "cashew") ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-3 max-w-2xl text-sm leading-relaxed text-ink",
-					children: "Cashew note: the raw shell oil blisters skin. Do not add this tree unless you already know a safe way to process it."
+					children: "Cashew note: do not shell or eat nuts from a home tree. The shell oil is caustic, and safe kernel removal is a commercial process."
 				}) : null
 			] }),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
@@ -1634,7 +1671,7 @@ function PlanView() {
 var START_STEPS = [
 	"Find your winter zone and climate in this app.",
 	"Pick a nut marked “Grow here”.",
-	"Buy named, grafted plants, and a partner if the plant needs one.",
+	"Choose named cultivars where available, and a partner if the plant needs one. Use planting seed for peanuts.",
 	"Test drainage before you dig.",
 	"Water deeply the first two summers.",
 	"Be patient: most nut trees take years to bear. Peanuts take one summer.",
@@ -1643,7 +1680,11 @@ var START_STEPS = [
 var SAFETY = [
 	{
 		title: "Mold",
-		body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out. Dry nuts fully and store them cool and dry."
+		body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out. Dry nuts fully and store them cool and dry.",
+		source: {
+			href: "https://www.fda.gov/food/natural-toxins-food/mycotoxins",
+			label: "FDA, Mycotoxins"
+		}
 	},
 	{
 		title: "Allergies",
@@ -1659,11 +1700,19 @@ var SAFETY = [
 	},
 	{
 		title: "Ginkgo",
-		body: "The fruit smells bad and can irritate skin like poison ivy. Wear gloves. Eat only a few cooked ginkgo nuts at a time. Never eat them raw, and do not give them to young children."
+		body: "Do not harvest ginkgo seeds to eat. The fruit can irritate skin; wear gloves if you have to clean it up. Poison Control says not to eat ginkgo seeds, raw or roasted. A large amount has been followed by seizures. This guide does not give a safe number. If someone eats an unknown amount, call Poison Control at 1-800-222-1222.",
+		source: {
+			href: "https://www.poison.org/articles/ginkgo-biloba-risks-benefits-181",
+			label: "Poison Control, Ginkgo biloba risks"
+		}
 	},
 	{
 		title: "Cashew",
-		body: "Never crack raw cashew shells. See the cashew page."
+		body: "Never crack raw cashew shells, and do not try to roast them at home. University of Florida extension says homeowners should not shell or eat nuts from a backyard tree. Leave the shell and the kernel to commercial processors.",
+		source: {
+			href: "https://edis.ifas.ufl.edu/publication/HS377",
+			label: "UF/IFAS, Cashew apple in the Florida home landscape"
+		}
 	},
 	{
 		title: "Wild nuts",
@@ -1697,7 +1746,7 @@ var GLOSSARY = [
 	},
 	{
 		term: "Juglone",
-		meaning: "A chemical from walnut roots and husks that harms some plants."
+		meaning: "A chemical from walnut roots, leaves, and husks. It commonly injures tomato, potato, pepper, and eggplant. It does not injure every garden plant."
 	},
 	{
 		term: "Aflatoxin",
@@ -1710,6 +1759,43 @@ var GLOSSARY = [
 	{
 		term: "Hull and husk",
 		meaning: "The outer cover around the shell."
+	}
+];
+var SOURCES = [
+	{
+		topic: "Winter zones",
+		label: "USDA Plant Hardiness Zone Map, how to use the maps",
+		href: "https://planthardiness.ars.usda.gov/pages/how-to-use-the-maps"
+	},
+	{
+		topic: "Peanut planting",
+		label: "UGA Extension, Peanut planting (soil at 4 inches, 68°F for three days)",
+		href: "https://site.extension.uga.edu/plowpoints/2016/04/peanut-planting/"
+	},
+	{
+		topic: "Juglone",
+		label: "Wisconsin Horticulture, Black walnut toxicity",
+		href: "https://hort.extension.wisc.edu/articles/black-walnut-toxicity/"
+	},
+	{
+		topic: "Cashew nuts at home",
+		label: "UF/IFAS HS377, Cashew apple in the Florida home landscape",
+		href: "https://edis.ifas.ufl.edu/publication/HS377"
+	},
+	{
+		topic: "Ginkgo seeds",
+		label: "Poison Control, Ginkgo biloba risks and benefits",
+		href: "https://www.poison.org/articles/ginkgo-biloba-risks-benefits-181"
+	},
+	{
+		topic: "Aflatoxin and other mycotoxins",
+		label: "FDA, Mycotoxins",
+		href: "https://www.fda.gov/food/natural-toxins-food/mycotoxins"
+	},
+	{
+		topic: "Bitter almond and stone-fruit kernels",
+		label: "FDA, Natural toxins in food",
+		href: "https://www.fda.gov/food/chemical-contaminants-pesticides/natural-toxins-food"
 	}
 ];
 function StartView() {
@@ -1748,13 +1834,30 @@ function SafetyView() {
 				className: "flex flex-col gap-4",
 				children: SAFETY.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 					className: "rounded-card border border-line bg-paper p-4",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "font-display text-xl text-ink",
-						children: item.title
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-2 text-sm leading-relaxed text-ink-soft",
-						children: item.body
-					})]
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "font-display text-xl text-ink",
+							children: item.title
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-2 text-sm leading-relaxed text-ink-soft",
+							children: item.body
+						}),
+						item.source ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+							className: "mt-2 text-xs leading-relaxed text-ink-soft",
+							children: [
+								"Source:",
+								" ",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									className: "underline",
+									href: item.source.href,
+									target: "_blank",
+									rel: "noreferrer",
+									children: item.source.label
+								})
+							]
+						}) : null
+					]
 				}, item.title))
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FamilyNote, {})
@@ -1800,6 +1903,40 @@ function AboutView() {
 		})]
 	});
 }
+function SourcesView() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "flex max-w-2xl flex-col gap-6",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", { children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "text-sm font-medium tracking-wide text-moss",
+				children: "Where the claims come from"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				className: "mt-2 font-display text-4xl text-ink",
+				children: "Sources"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "mt-3 text-sm leading-relaxed text-ink-soft",
+				children: "Zone ranges, climate-fit labels, and pollination notes in this guide are a rough screen. Cultivar and local conditions can change the result. Confirm a pair, a chill requirement, or a pesticide question with your nursery or county extension."
+			})
+		] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+			className: "flex flex-col gap-3",
+			children: SOURCES.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+				className: "border-t border-line pt-3",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "text-sm font-medium text-ink",
+					children: item.topic
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					className: "mt-1 block text-sm leading-relaxed text-moss underline",
+					href: item.href,
+					target: "_blank",
+					rel: "noreferrer",
+					children: item.label
+				})]
+			}, item.href))
+		})]
+	});
+}
 var NAV = [
 	{
 		id: "start",
@@ -1840,6 +1977,11 @@ var NAV = [
 		id: "about",
 		label: "About",
 		icon: Info
+	},
+	{
+		id: "sources",
+		label: "Sources",
+		icon: ScrollText
 	},
 	{
 		id: "plan",
@@ -1928,6 +2070,7 @@ function Shell() {
 					view === "safety" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SafetyView, {}) : null,
 					view === "glossary" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GlossaryView, {}) : null,
 					view === "about" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutView, {}) : null,
+					view === "sources" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SourcesView, {}) : null,
 					view === "plan" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PlanView, {}) : null
 				]
 			}),

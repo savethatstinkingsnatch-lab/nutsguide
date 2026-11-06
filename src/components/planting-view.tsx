@@ -20,6 +20,19 @@ export function PlantingView() {
           </li>
         ))}
       </ol>
+      <p className="max-w-2xl text-xs leading-relaxed text-ink-soft">
+        Pollination pairs are cultivar-specific. Confirm them with the nursery or your county
+        extension. Juglone guidance follows{" "}
+        <a
+          className="underline"
+          href="https://hort.extension.wisc.edu/articles/black-walnut-toxicity/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Wisconsin Horticulture
+        </a>
+        , whose plant lists are observational and sometimes disagree.
+      </p>
     </div>
   );
 }
