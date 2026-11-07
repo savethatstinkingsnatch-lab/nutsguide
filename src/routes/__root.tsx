@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Nut Trees: Nut Grove";
+const APP_NAME = "Volume 17: Nut Trees (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A beginner’s climate guide to growing nut trees and plants: winter zones, chill, summer heat, and harvest weather.",
+          "Volume 17 of The Education Revolution, by Blue and the Awesome Dudes. A beginner’s climate guide to growing nut trees and plants: winter zones, chill, summer heat, and harvest weather.",
       },
       { name: "theme-color", content: "#3E5A46" },
     ],
