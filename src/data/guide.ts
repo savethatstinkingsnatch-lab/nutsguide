@@ -168,20 +168,20 @@ export const PLANTS: NutPlant[] = [
     water: "In the first two summers, water deeply when the soil under the mulch is dry. How often depends on rain and soil. Skip the daily sprinkle. Established bushes tolerate short dry spells.",
     chill: "They need a real winter chill. Confirm hours for the cultivar with the nursery or your county extension. A frost-free winter is not enough. An earlier 800–1,200 hour range was not matched to a university page.",
     pollination:
-      "Wind carries the pollen. Plant at least two different compatible cultivars. One bush almost never pollinates itself.",
+      "Wind-pollinated. Plant at least two different compatible cultivars whose pollen shed and female-flower receptivity overlap (OSU EM 9073 and EM 9074). Hazelnuts are generally self-incompatible; a matching incompatibility allele can block a cross even when bloom times look close. One bush almost never pollinates itself. OSU: place pollinizers near the crop trees, ideally within about 50 feet.",
     needsPartner: true,
     harvest:
       "Late summer into early fall, when the nut loosens in the husk. Dry them before you store them or they mold.",
     startHere:
       "The best first nut if you want something smaller than a shade tree and can give it a partner.",
     steps: [
-      "Plant two compatible cultivars in full sun, where a test hole drains within a day.",
+      "Plant two compatible cultivars in full sun, where a screening drainage test (a hole that empties within a day) does not leave standing water.",
       "Mulch a wide ring, but keep the mulch off the stems so voles cannot nest against the bark.",
       "Water deeply when the soil under the mulch is dry, especially the first two summers. Skip the daily sprinkle.",
-      "Open the center of the bush so light and air reach the catkins. The first real crop comes in a few years, not the first fall.",
+      "Train the bush for light and air, following a system used for hazelnuts in your region. Training systems differ by species; do not assume every nut crop should be opened in the center. The first real crop comes in a few years, not the first fall.",
     ],
     pitfalls: [
-      "One lonely bush. Hazelnuts need a different cultivar nearby.",
+      "One lonely bush, or a second cultivar that is genetically incompatible or blooms at the wrong time. Hazelnuts need a compatible partner nearby.",
       "Eastern filbert blight in humid country. Buy resistant cultivars, or pick another nut. Oregon State University notes that some trees with the older (Gasaway) resistance gene can still be infected by newer strains; confirm a current resistant list with your nursery or extension.",
       "Squirrels. They harvest on their schedule, not yours.",
     ],
@@ -220,20 +220,20 @@ export const PLANTS: NutPlant[] = [
     water: "While the tree is young, water deeply when the soil under the mulch is dry. Established trees want moisture while burrs fill, not a swamp. There is no fixed weekly schedule.",
     chill: "A real winter, not an arctic one and not a tropical one.",
     pollination:
-      "Not self-fertile. Plant two different Chinese cultivars within about 100 feet. One tree is shade, not an orchard.",
+      "Not self-fertile. Two genetically different trees can cross-pollinate; two trees of the same cultivar will not. Grafted trees of two different Chinese or blight-resistant hybrid cultivars give more predictable nut quality. Related guidance often uses about 100 feet as a working distance. A single tree is shade, not an orchard.",
     needsPartner: true,
     harvest:
-      "Fall, when the spiny burrs split. Wear gloves. Good nuts feel heavy. Chestnuts are fresh food, not dry nuts. Store them in the refrigerator (about 32 to 40°F) in a bag with a few holes, and use them within a few weeks, or freeze them. Throw out any that are moldy inside.",
+      "Fall, when the spiny burrs split. Wear gloves. Good nuts feel heavy. Chestnuts are fresh food, not dry nuts — do not dry them until they snap like a walnut. Refrigerate (about 32 to 40°F) in a bag with a few holes and use within a few weeks, or freeze. OSU: frozen fresh chestnuts last about 2 to 3 months at 32°F (the freezing point, not a typical home freezer) or about 1 year at 0°F. Throw out any that are moldy inside.",
     startHere:
       "The classic beginner tree where winters are real and you can give it a partner and a dry root run.",
     steps: [
-      "Test drainage before you buy. Fill a hole with water. If it is still there the next day, choose another spot.",
-      "Plant two named cultivars, not one, and not an American chestnut seedling.",
+      "Test drainage before you buy. A hole that still holds water the next day is a screening fail — choose another spot. The 24-hour test is not proof the site drains well in every season.",
+      "Plant two genetically different trees — ideally two named cultivars, not two copies of the same graft. Two different seedlings can sometimes pollinate each other, but the nuts will not match a named cultivar.",
       "Keep grass away from the trunk for the first years and mulch the root zone.",
       "Protect the bark from deer and the crop from wildlife. Burrs are armored; squirrels still show up.",
     ],
     pitfalls: [
-      "A single tree. Chestnuts do not pollinate themselves.",
+      "A single tree, or two trees of the same cultivar. Chestnuts do not pollinate themselves.",
       "A soggy planting hole.",
       "Horse chestnut and buckeye are POISONOUS look-alikes. Edible chestnuts grow in a husk covered with sharp, dense spines like a hedgehog, usually 2 to 3 nuts per husk, and each nut is flat on one side with a pointed tip and a little tassel. Buckeye and horse chestnut husks are leathery with a few blunt bumps or none, usually hold one round, glossy nut with no point, and have leaves shaped like a hand (5 to 7 leaflets from one point). If you are not sure, do not eat it.",
     ],
@@ -244,7 +244,7 @@ export const PLANTS: NutPlant[] = [
     name: "Black walnut",
     latin: "Juglans nigra",
     form: "Tree",
-    tagline: "A native giant. Wonderful at the back of a large lot, hostile to the vegetable garden.",
+    tagline: "A native giant. Wonderful at the back of a large lot; a mixed neighbor for some vegetables — see juglone in Stay Safe.",
     difficulty: "Intermediate",
     zoneMin: 4,
     zoneMax: 9,
@@ -278,13 +278,13 @@ export const PLANTS: NutPlant[] = [
     startHere:
       "Plant it only if you have acreage to spare and you like the idea of a tree that will still be huge when you are not.",
     steps: [
-      "Do not plant tomatoes, peppers, potatoes, or eggplant inside the root zone. Black walnut makes juglone, which commonly injures those crops. University of Wisconsin Extension (Joy, Hudelson, and Jull, D0021, revised 28 Feb. 2024) says the effect of a mature tree can extend 50 to 80 feet from the trunk, greatest inside the dripline. Many other vegetables tolerate it. Extension lists of further sensitive plants are observational and do not all agree, so check a current list before you clear the whole garden.",
+      "Avoid planting tomatoes, peppers, potatoes, or eggplant directly under the canopy when practical. Wisconsin lists those nightshades as traditionally sensitive and gives a 50- to 80-foot figure from a mature trunk. Field evidence is mixed; shade, water, and root competition can cause the same poor growth (Iowa State). Observe before you blame juglone.",
       "Plant a grafted named tree if you want nuts sooner and shells a bit kinder.",
       "Water deeply the first summers and keep mowers off the bark.",
       "Plan the harvest mess: husks stain driveways, hands, and clothes.",
     ],
     pitfalls: [
-      "Juglone commonly injures tomato, potato, pepper, and eggplant near the roots. Bean, beet, carrot, corn, onion, and squash are often listed as tolerant. Do not treat every garden plant as sensitive. Lists beyond those crops are incomplete and sometimes conflict.",
+      "Tomato, potato, pepper, and eggplant have traditionally been considered sensitive near black walnut. Bean, beet, carrot, corn, onion, and squash are often listed as tolerant. Shade, dry soil, and root competition can produce the same symptoms, so do not blame juglone automatically, and do not treat every garden plant as sensitive.",
       "Planting it ten feet from the house. It will not stay ten feet.",
       "Expecting a quick crop from a seedling.",
       "Pets and horses: Keep dogs away from fallen and moldy walnuts and hulls. Mold on them can cause shaking and seizures. Never use black walnut wood shavings for horse bedding. They can cause laminitis (painful hoof inflammation).",
@@ -326,7 +326,7 @@ export const PLANTS: NutPlant[] = [
     pollination:
       "Walnut trees usually release pollen and have ready female flowers at different times, so one tree often pollinates itself poorly. Many cultivars set a partial crop alone. A second cultivar that sheds pollen when the first one's female flowers are ready gives more nuts. Ask the nursery which pair overlaps.",
     needsPartner: false,
-    harvest: "Hulls split in fall. Remove them promptly and dry the nuts until the kernel snaps, not bends.",
+    harvest: "Hulls split in fall. Remove them promptly and dry the nuts. Oregon State (FS 146): begin drying within 24 hours; walnuts are dry enough when the divider between the halves breaks with a snap, not a bend.",
     startHere:
       "A good home walnut where springs are not a frost trap and summers are not a steam bath.",
     steps: [
@@ -337,6 +337,7 @@ export const PLANTS: NutPlant[] = [
     ],
     pitfalls: [
       "An early-leafing tree in a frost pocket. The wood lives; the crop dies in spring.",
+      "Wet springs and walnut blight. Ask your extension before the disease has already spotted the crop.",
       "Wet, heavy soil.",
       "English walnut makes less juglone than black walnut. Tomatoes may still struggle directly underneath. That is not a reason to assume the rest of the garden will fail. Wisconsin Extension notes related trees, including shagbark hickory, also produce juglone in lower amounts.",
     ],
@@ -375,14 +376,14 @@ export const PLANTS: NutPlant[] = [
     water: "Thirsty while nuts fill in mid to late summer. Drought then means empty nuts even on a healthy tree.",
     chill: "Moderate. Southern paper-shell types also need a longer, hotter season than northern cultivars.",
     pollination:
-      "Pecans are split by timing. Type I sheds pollen first. Type II has receptive flowers first. Plant one of each or the crop disappoints.",
+      "Pecans are commonly grouped as Type I or Type II by pollen and flower timing. Planting opposite types often helps, but the flowering periods must overlap — the labels alone do not guarantee a match. Ask your extension office for a proven pair in your region. Oklahoma State: native trees within about 300 feet can sometimes supply pollen.",
     needsPartner: true,
     harvest: "Fall, when the husks split. Dry the nuts before you bag them.",
     startHere:
       "Worth it if you have heat, space, and patience. The wrong pecan for your summer is the most common beginner disappointment.",
     steps: [
       "Ask for a northern or southern cultivar that matches your season length, not the one a friend grows three zones south.",
-      "Plant a Type I and a Type II so pollen and flowers overlap.",
+      "Plant a proven pair so pollen shed and female receptivity overlap. Ask extension for cultivars that work in your region; Type I and Type II alone are not enough.",
       "Water deeply in late summer while kernels fill.",
       "Keep the first years mulched and the trunk safe from mowers and deer.",
     ],
@@ -431,7 +432,7 @@ export const PLANTS: NutPlant[] = [
     harvest:
       "Late summer, when hulls split and the shell shows. Knock them onto a tarp, dry them completely, then store.",
     startHere:
-      "A wonderful home tree only in dry-summer climates. Everywhere else, admire them and plant something else.",
+      "Almonds are most reliable where bloom-time weather is relatively dry and late frost is uncommon. In humid regions, disease pressure makes them a more difficult home crop. Choose locally proven cultivars and expect additional management.",
     steps: [
       "Confirm your bloom-time weather is usually dry, and that late frost is uncommon on that exact spot.",
       "Plant a pollination pair suited to your chill hours.",
@@ -536,10 +537,10 @@ export const PLANTS: NutPlant[] = [
     harvest:
       "Fall. Shells are thick. A real nutcracker is part of the kit, and wildlife will contest every nut.",
     startHere:
-      "Plant it if you love native trees and can wait. If you want nuts while you still live in the house, also plant a hazelnut or chestnut. Wisconsin Extension: shagbark hickory also produces juglone, usually in lower amounts than black walnut.",
+      "Plant it if you love native trees and can wait. If you also want a sooner harvest, plant a hazelnut or chestnut beside it. UKY ID-77 estimates 10–12 years to first harvest for grafted hickory — an estimate, not a guarantee. Seedlings are often slower, but the wait is not necessarily longer than the owner’s lifetime. Wisconsin Extension: shagbark hickory also produces juglone, usually in lower amounts than black walnut.",
     steps: [
       "Give it a lifetime spot with deep soil, far from pavement.",
-      "Buy a grafted tree if you can find one. A seedling is a gift to someone else.",
+      "Buy a grafted tree if you can find one. A seedling is typically slower, not a tree you should assume you will never harvest.",
       "Mulch and water the early years, then mostly leave it alone.",
       "Learn to share the crop. Hickories feed the woods as well as the kitchen.",
     ],
@@ -555,7 +556,7 @@ export const PLANTS: NutPlant[] = [
     name: "Macadamia",
     latin: "Macadamia integrifolia",
     form: "Tree",
-    tagline: "The beginner tree of frost-free climates. One hard freeze ends the story.",
+    tagline: "The beginner tree of warm, low-frost climates. Young trees are especially vulnerable to freezes.",
     difficulty: "Intermediate",
     zoneMin: 9,
     zoneMax: 11,
@@ -581,22 +582,23 @@ export const PLANTS: NutPlant[] = [
     sun: "Sun, with shelter from the worst wind.",
     soil: "Well drained and slightly acidic. They resent salt and wet clay.",
     water: "Regular water. They are not desert trees.",
-    chill: "None. Frost is the enemy. Mature trees are damaged around the mid-20s °F.",
+    chill: "None. Frost is the limit, not a chill-hour count. Do not rely on a USDA zone rating alone. UF/IFAS estimates freeze damage around 25–26°F for mature trees and below 32°F for young trees in South Florida; actual injury depends on the freeze (Crane).",
     pollination: "Many crop better with a second cultivar nearby. Some fruit alone.",
     needsPartner: false,
     harvest:
       "Nuts drop when ripe, often over many months. Gather often, husk, and dry until the kernel is crisp. Undried macadamias do not store.",
-    startHere: "The straightforward nut where frost is a rumor, as long as you can water and drain the roots.",
+    startHere: "The straightforward nut in a warm, low-frost climate, as long as you can water and drain the roots. Young trees are especially vulnerable to freezes. Do not rely on a USDA zone rating alone.",
     steps: [
       "Plant a grafted named tree after any chance of frost has passed.",
       "Keep a wide mulch ring and water through dry spells.",
       "Have frost cloth ready for the first winters if your zone still flirts with the high 20s.",
-      "Dry the harvest until the kernel snaps. This step is not optional.",
+      "Dry the harvest until the kernel is crisp. This step is not optional.",
     ],
     pitfalls: [
-      "A single hard frost on a young tree.",
+      "A freeze on a young, unprotected tree. Established trees and some cultivars may tolerate a brief colder night, but do not count on it.",
       "Bagging nuts that still feel rubbery inside.",
-      "Treating it like a walnut you can try “a zone cooler.” You cannot.",
+      "Relying on a USDA zone rating alone, or treating it like a walnut you can casually try a zone cooler.",
+      "Leaving macadamia nuts where a dog can eat them. They are toxic to dogs (ASPCA).",
     ],
     buy: "A grafted cultivar. Seedlings take longer and the nuts may be poor. Rough-shell types (M. tetraphylla) take slightly more cold than smooth-shell.",
   },
@@ -626,30 +628,30 @@ export const PLANTS: NutPlant[] = [
       subtropical: "Warmth is easy. Still wait until the soil at 4 inches has stayed above 68°F for three days, with no cold front coming.",
       tropical: "Warmth is there. You still need loose soil and a harvest before pods sprout in the ground.",
     },
-    years: "100–150 days, one summer",
+    years: "One summer. Many garden types mature in about 90 to 150 days, depending on variety and season (USU Extension, 2020); later types can take longer.",
     size: "A low bush, 1–2 ft tall",
     spacing: "Rows 2–3 ft apart, plants 6–8 inches",
     sun: "Full sun.",
-    soil: "Sandy or loose loam, slightly acidic. If you cannot push a hand in, do not plant peanuts there.",
+    soil: "Prefer loose, sandy or sandy-loam soil. Heavier soil can work if it is loosened and well drained (USU Extension, 2020). Compacted or poorly drained clay makes pegging and harvest harder. Soil-test first. Pods take up calcium in the pegging zone, especially large-seeded (Virginia) types. Add gypsum only if a soil test or your extension says so (UGA Extension).",
     water: "Even moisture while pegs are forming, then ease off so you can lift the plants.",
     chill: "None. Do not use a winter zone. Sow when the soil at 4 inches has stayed above 68°F for three days and no cold front is expected, and only if the frost-free season is long enough for the type you plant.",
     pollination:
       "Self-pollinating. After the yellow flower fades, a peg grows down into the soil and the pod forms underground.",
     needsPartner: false,
     harvest:
-      "When leaves yellow, loosen the soil and lift the whole plant. Hang or rack the plants until the pods are fully dry, then store. Fresh undried peanuts spoil.",
+      "Yellowing foliage is a clue, but also check the pods. UGA uses a hull-scrape test: scrape the outer hull; a darker inner hull generally means a more mature pod. Lift the whole plant. USU: dry on the plant 1 to 2 weeks in a well-ventilated place, then dry the pods another 2 to 3 weeks (about 4 weeks total). Fresh undried peanuts spoil.",
     startHere:
       "The one nut a beginner can sow and eat in the same year — if the summer is long and the soil is loose.",
     steps: [
       "Loosen a sandy bed only after the soil at 4 inches has stayed above 68°F for three days, with no cold front in the forecast. The last-frost date alone is too early.",
       "Sow raw planting seed, not roasted grocery peanuts.",
-      "When flowers fade, keep the soil loose so the pegs can bury themselves. You can hill a little soil around the stems.",
-      "Lift the whole plant at yellowing and dry it for weeks before you roast or store.",
+      "When flowers fade, keep the soil loose so the pegs can bury themselves. You can hill a little soil around the stems. Calcium in the pegging zone matters, especially for large-seeded types; add gypsum only if a soil test or extension says so.",
+      "Check pod maturity (hull-scrape or a cut pod), not only yellow leaves, then lift the whole plant and dry it on the plant and in the pod for weeks before you roast or store (USU Extension).",
     ],
     pitfalls: [
-      "Heavy clay. The pegs never bury, and you cannot lift the crop.",
+      "Compacted or poorly drained heavy clay, which makes pegging and digging harder. Loosen the bed; peanuts prefer sandy ground but are not automatically impossible in heavier soil that has been made workable (USU Extension).",
       "Planting because the last frost date has passed, while the soil at 4 inches is still cool.",
-      "Roasting or sealing the pods before they are dry.",
+      "Roasting or sealing the pods before they are dry, or digging only because the leaves have yellowed without checking the pods.",
     ],
     buy: "Raw seed peanuts sold for planting, not a grafted plant. Match the type to the length of your frost-free season. An early type is the safer try where summer is only moderate.",
   },
@@ -767,7 +769,7 @@ export const SEASONS: {
         note: "In a cold climate, heel plants into damp sawdust until the ground gives. In a mild climate this is often the best planting window.",
       },
       {
-        text: "Prune hazelnuts, almonds, and young walnuts on a dry day. Open the center. Do not paint the wounds.",
+        text: "Prune on a dry day, following the training system used for that species. Do not assume every hazelnut, almond, or walnut should be opened in the center. Training systems differ. Do not paint the wounds.",
       },
       {
         text: "In the southern hemisphere, this is not January. Follow leaf drop, not the page on the calendar.",
@@ -828,13 +830,13 @@ export const SEASONS: {
         text: "Harvest promptly. Squirrels, jays, and mold are all on a shorter clock than you are.",
       },
       {
-        text: "Begin drying walnuts and hazelnuts within 24 hours (Oregon State University Extension, FS 146, revised September 2002). Dry with good airflow at about 95 to 105°F, and do not go above 110°F. Walnuts are dry when the divider snaps, not bends. Chestnuts are perishable: refrigerate them; they usually mold within 2 weeks at room temperature. Throw out moldy nuts.",
+        text: "Dry or cure each harvest the way that nut needs: walnuts until the divider snaps (OSU FS 146); peanuts on the plant, then in the pod (USU Extension); macadamias until the kernel is crisp; chestnuts are perishable and go in the refrigerator, not a dry pantry. Nuts stored damp will mold or go rancid.",
       },
       {
         text: "Wear gloves for black walnut husks and chestnut burrs. Walnut husk stain does not forgive.",
       },
       {
-        text: "Do not mulch tomato, pepper, potato, or eggplant beds with fresh black walnut husks or chips. Juglone breaks down as material composts, so finished compost is not the same as fresh husks. If you are unsure, keep fresh husks out of those beds.",
+        text: "Avoid spreading fresh black walnut husks or chips on beds of tomato, pepper, potato, or eggplant. Wisconsin Extension advises against using black walnut bark or wood as mulch. Finished, well-rotted compost is not the same as fresh husks. Shade and root competition can also explain poor growth, so observe before you blame juglone alone.",
       },
       {
         text: "Write down what cropped, what froze, and what the squirrels took. Next year’s order depends on that note.",
@@ -853,19 +855,19 @@ export const PLANTING_LESSONS: { title: string; body: string }[] = [
   },
   {
     title: "Buy a name, not a grocery nut",
-    body: "A walnut from a bag is a seedling of unknown parentage. It may not resemble the nut you ate, it may be the wrong chill type, and it will be slow. Order a named cultivar. For peanuts, buy raw seed sold for planting — roasting kills it. Some named varieties are protected by plant patents or other restrictions. A missing patent label does not prove a plant is unprotected. Check the variety’s status before grafting, layering, or sharing plants.",
+    body: "A walnut from a bag is a seedling of unknown parentage. It may not resemble the nut you ate, it may be the wrong chill type, and it will be slow. Order a named cultivar. For peanuts, buy raw seed sold for planting — roasting kills it. Some named varieties are protected by plant patents, Plant Variety Protection (PVP) certificates, or utility patents. A missing label does not prove a plant is unprotected. Check the variety’s status before grafting, layering, or sharing plants.",
   },
   {
     title: "Assume you need two, until the entry says otherwise",
-    body: "Hazelnuts, chestnuts, pecans, almonds, and pistachios want a partner. The partner is a different cultivar, or in pistachios a male tree, not a second copy of the same plant. Wind does the carrying, so they do not need to touch, but they need to be in the same yard, not the next town. Confirm the pair with the nursery or your county extension. Cultivar lists change, and this page is not a trial result.",
+    body: "Hazelnuts, chestnuts, pecans, almonds, and pistachios want a partner. The partner is a different cultivar, or in pistachios a male tree, not a second copy of the same plant. Wind does the carrying, so they do not need to touch. A suitable nearby tree can supply pollen; the partner does not have to be in the same yard. For pecans, Oklahoma State notes that native trees within about 300 feet can sometimes provide pollen. Oregon State recommends planting hazelnut pollinizers near the crop trees, ideally within about 50 feet. Confirm a pair, bloom overlap, and a practical distance with the nursery or your county extension. Cultivar lists change, and this page is not a trial result.",
   },
   {
     title: "Run the drainage test",
-    body: "Dig a hole about a foot deep and fill it with water. Let it drain, fill it again, and see if it is gone within a day. Chestnuts, almonds, walnuts, and macadamias all fail in a bathtub of clay. Raising the planting spot a few inches helps a marginal site. It does not fix a swamp.",
+    body: "Dig a hole about a foot deep and fill it with water. Let it drain, fill it again, and see if it is gone within a day. That 24-hour hole test is only a screening check, not proof that the site drains well in every season. If water is still standing the next day, choose another spot. Chestnuts, almonds, walnuts, and macadamias all fail in a bathtub of clay. Raising the planting spot a few inches helps a marginal site. It does not fix a swamp.",
   },
   {
     title: "Plant at the size it will be",
-    body: "The cute gallon pot becomes a pecan that shades the roof. Measure the mature spacing in the entry and walk it off before you dig. Keep black walnuts away from tomatoes, peppers, potatoes, and eggplant. University of Wisconsin Extension says juglone effects can reach 50 to 80 feet from a mature trunk, greatest inside the dripline. Many other vegetables tolerate it. Shagbark hickory also produces juglone, in lower amounts.",
+    body: "The cute gallon pot becomes a pecan that shades the roof. Measure the mature spacing in the entry and walk it off before you dig. Avoid planting tomatoes, peppers, potatoes, and eggplant directly under a black walnut canopy when practical. Wisconsin Extension says juglone effects of a mature tree can reach 50 to 80 feet from the trunk, with the greatest effect inside the dripline. Iowa State University Extension notes that field evidence is mixed, and that shade, dry soil, and root competition can cause the same poor growth. Observe before you assume juglone is responsible.",
   },
   {
     title: "Planting day is quiet work",
@@ -873,7 +875,7 @@ export const PLANTING_LESSONS: { title: string; body: string }[] = [
   },
   {
     title: "The first three years are about roots",
-    body: "Water deeply when the soil under the mulch is dry, keep grass back, and protect bark from mowers, rabbits, and deer. A little mulch beats a lot of fertilizer. Soil-test before you feed. You are not behind if there are no nuts yet. Hazelnuts and almonds are the early ones. Hickories are a different kind of promise.",
+    body: "Water deeply when the soil under the mulch is dry, keep grass back, and protect bark from mowers, rabbits, and deer. A little mulch beats a lot of fertilizer. Soil-test before you feed. You are not behind if there are no nuts yet. Hazelnuts and almonds are among the earlier crops. Hickories are a longer view, not a crop you should assume you will never harvest.",
   },
   {
     title: "Someone else wants the crop",

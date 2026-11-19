@@ -85,19 +85,29 @@ export function PlanView() {
         )}
         {plants.some((p) => p.id === "black-walnut" || p.id === "english-walnut" || p.id === "hickory") ? (
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-            Walnut and hickory note: juglone from black walnut commonly injures tomato,
-            potato, pepper, and eggplant near the roots. University of Wisconsin Extension
-            says the effect of a mature black walnut can extend 50 to 80 feet from the
-            trunk, with the greatest toxicity inside the dripline. Many other crops
-            tolerate it. Do not clear the whole garden on a rumor. English walnut is a
-            milder case. Shagbark hickory also produces juglone, in lower amounts
-            (Wisconsin Horticulture, Joy, Hudelson, and Jull, revised 28 Feb. 2024).
+            Walnut and hickory note: black walnut produces juglone, which can inhibit some
+            plants under certain conditions. Wisconsin Extension says the effect of a mature
+            tree can extend 50 to 80 feet from the trunk, with the greatest effect inside the
+            dripline, and lists tomato, potato, pepper, and eggplant as traditionally
+            sensitive. Iowa State University Extension notes that field evidence is mixed, and
+            that shade, dry soil, and root competition can cause the same poor growth. Avoid
+            planting those vegetables directly under the canopy when practical, and observe
+            before you assume juglone is responsible. English walnut is a milder case.
+            Shagbark hickory also produces juglone, in lower amounts (Wisconsin Horticulture,
+            Joy, Hudelson, and Jull, revised 28 Feb. 2024; Iowa State, updated 22 June 2023).
           </p>
         ) : null}
         {plants.some((p) => p.id === "cashew") ? (
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink">
             Cashew note: do not shell or eat nuts from a home tree. The shell oil is
             caustic, and safe kernel removal is a commercial process.
+          </p>
+        ) : null}
+        {plants.some((p) => p.id === "macadamia") ? (
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
+            Macadamia note: macadamia nuts are toxic to dogs (ASPCA Animal Poison Control).
+            If a dog may have eaten them, call your veterinarian or ASPCA Animal Poison
+            Control at 888-426-4435.
           </p>
         ) : null}
       </section>

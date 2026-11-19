@@ -7,13 +7,13 @@ const START_STEPS = [
   "Soil-test first, and test drainage before you dig. Do not lime or sulfur on a guess.",
   "Water deeply when the soil under the mulch is dry, especially the first two summers. How often depends on rain and soil. A weekly watering in dry weather is a starting guideline, not a fixed calendar.",
   "Be patient: most nut trees take years to bear. Peanuts take one summer.",
-  "Dry your harvest fully and read Stay Safe before you eat or share.",
+  "Dry or cure the harvest the way that species needs — walnuts, peanuts, almonds, macadamias, and chestnuts are not the same — and read Stay Safe before you eat or share.",
 ];
 
 const SAFETY: { title: string; body: string; source?: { href: string; label: string } }[] = [
   {
     title: "Mold",
-    body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out (U.S. Food and Drug Administration, Mycotoxins). Dry nuts fully before you store them. Oregon State University Extension (Olsen and Raab, FS 146, revised September 2002) says to begin drying walnuts and hazelnuts within 24 hours of harvest; dry them with good airflow at about 95 to 105°F, and do not go above 110°F. Walnuts are dry enough when the divider between the halves breaks with a snap, not a bend. Store cool and dry. OSU says the greatest storage losses come from rancidity, mold, and Indian meal moth; keep in-shell nuts in a closed container.",
+    body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out (U.S. Food and Drug Administration, Mycotoxins). Dry or cure each harvest the way that species needs before you store it — the test is not the same for every nut. Oregon State University Extension (Olsen and Raab, FS 146, revised September 2002) says to begin drying walnuts and hazelnuts within 24 hours of harvest; dry them with good airflow at about 95 to 105°F, and do not go above 110°F. Walnuts are dry enough when the divider between the halves breaks with a snap, not a bend. Use the species notes in this guide for peanuts, almonds, macadamias, and chestnuts. Store cool and dry. OSU says the greatest storage losses come from rancidity, mold, and Indian meal moth; keep in-shell nuts in a closed container.",
     source: {
       href: "https://www.fda.gov/food/natural-toxins-food/mycotoxins",
       label: "FDA, Mycotoxins",
@@ -21,11 +21,15 @@ const SAFETY: { title: string; body: string; source?: { href: string; label: str
   },
   {
     title: "Allergies",
-    body: "Tree nut and peanut allergies can be severe. Ask before you share. Label gifts.",
+    body: "Tree nuts and peanuts are major food allergens (U.S. Food and Drug Administration). They are not the same allergy in every person. Ask before you share a harvest. Label gifts. This guide is not medical advice. Severe allergic reactions can be life-threatening. If someone has a known food allergy and starts having symptoms, stop eating the food immediately, evaluate the need for emergency treatment such as epinephrine, and seek medical attention (FDA, Food Allergies: What You Need to Know).",
+    source: {
+      href: "https://www.fda.gov/food/buy-store-serve-safe-food/food-allergies-what-you-need-know",
+      label: "FDA, Food Allergies: What You Need to Know",
+    },
   },
   {
     title: "Storage",
-    body: "Shelled nuts go rancid. OSU FS 146: if you cannot refrigerate or freeze hazelnuts and walnuts, store them in as cool a room as possible, 55°F or lower, and as dry as possible — they will not keep quality as long as refrigerated or frozen nuts. Chestnuts are different: they are a perishable, starchy food, more like an apple or potato than a dry tree nut. Clean and refrigerate them soon after harvest. OSU: fresh chestnuts in the shell last about 1 month in the refrigerator; frozen fresh chestnuts about 2 to 3 months at 32°F, or about 1 year at 0°F. Storing fresh chestnuts outside a fridge or freezer is not practical; they usually mold within 2 weeks.",
+    body: "Shelled nuts go rancid. OSU FS 146: if you cannot refrigerate or freeze hazelnuts and walnuts, store them in as cool a room as possible, 55°F or lower, and as dry as possible — they will not keep quality as long as refrigerated or frozen nuts. Chestnuts are different: they are a perishable, starchy food, more like an apple or potato than a dry tree nut. Clean and refrigerate them soon after harvest. OSU: fresh chestnuts in the shell last about 1 month in the refrigerator. Frozen fresh chestnuts last about 2 to 3 months at 32°F — that is the freezing point, used here as very cold refrigeration, not a typical home freezer, which is usually about 0°F — or about 1 year at 0°F. Storing fresh chestnuts outside a fridge or freezer is not practical; they usually mold within 2 weeks.",
     source: {
       href: "https://ir.library.oregonstate.edu/downloads/q524jp452",
       label: "Olsen, J., and C. Raab. Harvesting, Handling, and Storing Nuts from the Home Orchard. FS 146. Oregon State University Extension. Revised September 2002.",
@@ -33,10 +37,18 @@ const SAFETY: { title: string; body: string; source?: { href: string; label: str
   },
   {
     title: "Juglone",
-    body: "Black walnut (Juglans nigra) produces juglone, which prevents many plants from growing under or near it. University of Wisconsin Extension (Joy, Hudelson, and Jull, UW Plant Disease Facts D0021, revised 28 Feb. 2024) says the effect of a mature tree can extend 50 to 80 feet from the trunk, with the greatest toxicity inside the dripline. Tomato, potato, eggplant, and pepper are particularly sensitive. Beans, beet, carrot, corn, onion, and squash are often listed as tolerant. The Wisconsin lists are based on observation, not formal testing, and sources sometimes disagree — the fact sheet says so. Related trees including butternut and shagbark hickory also produce juglone, in lower amounts. Do not use black walnut bark or wood as mulch. Finished, well-rotted compost is not the same as fresh husks or chips.",
+    body: "Black walnut (Juglans nigra) produces juglone, a chemical that can inhibit some plants under certain conditions. University of Wisconsin Extension (Joy, Hudelson, and Jull, UW Plant Disease Facts D0021, revised 28 Feb. 2024) says the effect of a mature tree can extend 50 to 80 feet from the trunk, with the greatest toxicity inside the dripline. Tomato, potato, eggplant, and pepper have traditionally been considered particularly sensitive. Beans, beet, carrot, corn, onion, and squash are often listed as tolerant. Those Wisconsin lists are based on observation, not formal testing, and sources sometimes disagree — the fact sheet says so. Iowa State University Extension (updated 22 June 2023) notes that very little research in garden soils has shown a consistent juglone effect, and that yellowing, poor growth, or death near a walnut can also come from shade, dry soil, and root competition under any large tree. Avoid planting traditionally sensitive vegetables directly under a walnut canopy when practical, and observe how plants perform before assuming juglone is responsible. Related trees including butternut and shagbark hickory also produce juglone, in lower amounts (Wisconsin). Wisconsin advises against using black walnut bark or wood as mulch. Finished, well-rotted compost is not the same as fresh husks or chips. Keep fresh leaves, hulls, bark, and wood off sensitive beds.",
     source: {
       href: "https://hort.extension.wisc.edu/articles/black-walnut-toxicity/",
       label: "Wisconsin Horticulture, Black walnut toxicity (D0021, revised 28 Feb. 2024)",
+    },
+  },
+  {
+    title: "Macadamia nuts and dogs",
+    body: "Macadamia nuts are toxic to dogs (ASPCA Animal Poison Control). Signs can include weakness, especially in the rear legs, vomiting, tremors, and depression, often within 12 hours. If a dog may have eaten macadamia nuts, call your veterinarian or a pet poison hotline. ASPCA Animal Poison Control: 888-426-4435.",
+    source: {
+      href: "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/macadamia-nut",
+      label: "ASPCA, Macadamia Nut",
     },
   },
   {
@@ -49,11 +61,11 @@ const SAFETY: { title: string; body: string; source?: { href: string; label: str
   },
   {
     title: "Plant patents",
-    body: "Some named varieties are protected by plant patents or other restrictions. A missing patent label does not prove a plant is unprotected. Propagating a protected variety without permission may violate those rights, even for personal use. Check the variety’s status before grafting, layering, or sharing plants. The tag may say “PP” with a number, or “Propagation prohibited.”",
+    body: "Some named varieties are protected by plant patents, Plant Variety Protection (PVP) certificates, or utility patents. A USPTO plant patent typically covers a new, asexually reproduced plant and is often marked “PP” with a number. A USDA PVP certificate is a different form of protection, often used for seed-reproduced varieties. Utility patents can also restrict how a plant may be used. A missing label does not prove a plant is unprotected. Propagating a protected variety without permission may violate those rights, even for personal use. Check the variety’s status before grafting, layering, or sharing plants. The tag may say “PP” with a number, “PVP,” or “Propagation prohibited.”",
   },
   {
     title: "Acorns",
-    body: "Oak acorns are edible only after the bitter tannins are soaked out. Crack and grind them, then soak in changes of water until the water stays clear and they no longer taste bitter. Never eat raw bitter acorns.",
+    body: "Acorns from correctly identified oak species can be prepared as food after their tannins are removed. Tannin levels vary by species (Penn State, Go Nuts for Acorns, 23 Oct. 2023). Shell the acorns, discard damaged or moldy kernels, and leach the nutmeat or meal using a tested food-preparation method. Some species require much more leaching than others. Water clarity alone does not prove the process is complete. Use a reliable food-preparation guide before you eat. Never eat raw bitter acorns.",
   },
   {
     title: "Ginkgo",
@@ -79,12 +91,12 @@ const SAFETY: { title: string; body: string; source?: { href: string; label: str
 
 const GLOSSARY: { term: string; meaning: string }[] = [
   { term: "Cultivar", meaning: "A named variety, like Kanza pecan." },
-  { term: "Grafted", meaning: "A named variety joined onto a root. It bears sooner and grows true." },
-  { term: "Seedling", meaning: "Grown from a nut. It's slower, and you can't be sure what nuts it will make." },
-  { term: "Pollinizer", meaning: "The partner tree that supplies pollen." },
+  { term: "Grafted", meaning: "A named variety (the scion) joined onto a rootstock. Grafting preserves that cultivar’s identity. Named nut trees are often sold grafted because they typically bear sooner than a seedling of unknown parentage, but earlier fruiting is not guaranteed in every case." },
+  { term: "Seedling", meaning: "Grown from a nut. It is usually slower, and you cannot be sure what nuts it will make." },
+  { term: "Pollinizer", meaning: "The partner tree, or a suitable nearby tree, that supplies pollen. It does not have to stand in the same yard if it is close enough for wind to carry pollen." },
   {
     term: "Type I / Type II",
-    meaning: "Pecans that shed pollen first, or have female flowers ready first.",
+    meaning: "Pecan bloom timing: Type I (protandrous) sheds pollen first; Type II (protogynous) has female flowers receptive first. Planting opposite types often helps, but pollen shed and female receptivity must actually overlap. Ask your extension for a proven pair.",
   },
   {
     term: "Chill hours",
@@ -93,7 +105,7 @@ const GLOSSARY: { term: string; meaning: string }[] = [
   {
     term: "Juglone",
     meaning:
-      "A chemical from walnut roots, leaves, and husks. It commonly injures tomato, potato, pepper, and eggplant. University of Wisconsin Extension: the effect of a mature black walnut can extend 50 to 80 feet from the trunk, greatest inside the dripline. Shagbark hickory also produces juglone, in lower amounts. It does not injure every garden plant.",
+      "A chemical from walnut roots, leaves, and husks that can inhibit some plants under certain conditions. Tomato, potato, pepper, and eggplant have traditionally been considered sensitive, but field evidence is mixed, and shade, water, and root competition can cause the same poor growth. Wisconsin: effects of a mature tree can extend 50 to 80 feet from the trunk. Shagbark hickory produces less of it.",
   },
   {
     term: "Eastern filbert blight",
@@ -106,8 +118,9 @@ const GLOSSARY: { term: string; meaning: string }[] = [
       "A disease of walnut (fungus plus walnut twig beetle). APHIS: no federal quarantine; several states restrict moving walnut plants and wood. Check your state before you ship.",
   },
   { term: "Aflatoxin", meaning: "A poison made by some molds on nuts. You cannot cook it out." },
-  { term: "Tannin", meaning: "The bitter part of acorns." },
+  { term: "Tannin", meaning: "The bitter compounds in acorns. Levels vary by oak species and must be leached before acorns are eaten. Water clarity alone does not prove leaching is complete." },
   { term: "Hull and husk", meaning: "The outer cover around the shell." },
+  { term: "Plant patent and PVP", meaning: "A USPTO plant patent typically covers a new asexually reproduced plant and is often marked “PP” with a number. A USDA Plant Variety Protection (PVP) certificate is a different form of protection. Utility patents can also apply. A missing label does not prove a variety is unprotected." },
 ];
 
 const SOURCES: { topic: string; label: string; href: string }[] = [
@@ -175,6 +188,56 @@ const SOURCES: { topic: string; label: string; href: string }[] = [
     topic: "Thousand cankers disease and walnut shipping",
     label: "USDA APHIS. Thousand Cankers Disease. No federal regulation; several states have exterior quarantines. Page last modified 1 Nov. 2025.",
     href: "https://www.aphis.usda.gov/plant-pests-diseases/thousand-cankers",
+  },
+  {
+    topic: "Food allergies",
+    label: "FDA, Food Allergies: What You Need to Know. Tree nuts and peanuts are major food allergens.",
+    href: "https://www.fda.gov/food/buy-store-serve-safe-food/food-allergies-what-you-need-know",
+  },
+  {
+    topic: "Juglone field evidence",
+    label: "Iowa State University Extension, What plants are sensitive to the juglone produced by black walnuts? Updated 22 June 2023.",
+    href: "https://yardandgarden.extension.iastate.edu/faq/what-plants-are-sensitive-juglone-produced-black-walnuts",
+  },
+  {
+    topic: "Macadamia nuts and dogs",
+    label: "ASPCA Animal Poison Control, Macadamia Nut (toxic to dogs).",
+    href: "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/macadamia-nut",
+  },
+  {
+    topic: "Peanuts in the home garden",
+    label: "Beddes, T., and D. Drost. Peanuts in the Garden. Utah State University Extension. May 2020.",
+    href: "https://extension.usu.edu/yardandgarden/research/peanuts-in-the-garden",
+  },
+  {
+    topic: "Peanut maturity (hull-scrape)",
+    label: "University of Georgia Extension, Peanut Maturity Profile.",
+    href: "https://site.extension.uga.edu/bullochag/2024/09/peanut-maturity-profile-5/",
+  },
+  {
+    topic: "Macadamia freeze temperatures",
+    label: "Crane, J. H. Estimated Temperatures for Freeze Damage or Death of Tropical Fruit Trees in South Florida. UF/IFAS. Macadamia: mature about 25–26°F, young below 32°F.",
+    href: "https://sfyl.ifas.ufl.edu/media/sfylifasufledu/highlands/citrus/docs/pdfs/TROP-FRUIT-ONE-PAGER-Alternative-Crops-Highlands-Co.,-2025-(3).pdf",
+  },
+  {
+    topic: "Plant patents",
+    label: "USPTO, General Information About 35 U.S.C. 161 Plant Patents.",
+    href: "https://www.uspto.gov/patents/basics/apply/plant-patent",
+  },
+  {
+    topic: "Plant Variety Protection",
+    label: "USDA Agricultural Marketing Service, Plant Variety Protection.",
+    href: "https://www.ams.usda.gov/services/plant-variety-protection",
+  },
+  {
+    topic: "Acorn tannins",
+    label: "Busch, M. J. Go Nuts for Acorns! James C. Finley Center for Private Forests, Pennsylvania State University. 23 Oct. 2023.",
+    href: "https://ecosystems.psu.edu/research/centers/private-forests/news/go-nuts-for-acorns",
+  },
+  {
+    topic: "Hazelnut pollination",
+    label: "Oregon State University Extension. Growing Hazelnuts in the Pacific Northwest: Pollination and Nut Development. EM 9074.",
+    href: "https://catalog.extension.oregonstate.edu/em9074",
   },
 ];
 
