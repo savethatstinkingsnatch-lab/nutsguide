@@ -3,9 +3,9 @@ import { FamilyNote } from "@/components/family-note";
 const START_STEPS = [
   "Find your winter zone and climate in this app.",
   "Pick a nut marked “Grow here”.",
-  "Choose named cultivars where available, and a partner if the plant needs one. Use planting seed for peanuts.",
-  "Test drainage before you dig.",
-  "Water deeply the first two summers.",
+  "Choose named cultivars where available, and a partner if the plant needs one. Use planting seed for peanuts. Check the tag for patents before you graft or share wood; a missing label does not prove a plant is unprotected.",
+  "Soil-test first, and test drainage before you dig. Do not lime or sulfur on a guess.",
+  "Water deeply when the soil under the mulch is dry, especially the first two summers. How often depends on rain and soil. A weekly watering in dry weather is a starting guideline, not a fixed calendar.",
   "Be patient: most nut trees take years to bear. Peanuts take one summer.",
   "Dry your harvest fully and read Stay Safe before you eat or share.",
 ];
@@ -13,7 +13,7 @@ const START_STEPS = [
 const SAFETY: { title: string; body: string; source?: { href: string; label: string } }[] = [
   {
     title: "Mold",
-    body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out. Dry nuts fully and store them cool and dry.",
+    body: "Throw out any nut that is moldy, shriveled, discolored, or tastes bitter or stale. Some molds make aflatoxin, a poison you cannot cook out (U.S. Food and Drug Administration, Mycotoxins). Dry nuts fully before you store them. Oregon State University Extension (Olsen and Raab, FS 146, revised September 2002) says to begin drying walnuts and hazelnuts within 24 hours of harvest; dry them with good airflow at about 95 to 105°F, and do not go above 110°F. Walnuts are dry enough when the divider between the halves breaks with a snap, not a bend. Store cool and dry. OSU says the greatest storage losses come from rancidity, mold, and Indian meal moth; keep in-shell nuts in a closed container.",
     source: {
       href: "https://www.fda.gov/food/natural-toxins-food/mycotoxins",
       label: "FDA, Mycotoxins",
@@ -25,7 +25,31 @@ const SAFETY: { title: string; body: string; source?: { href: string; label: str
   },
   {
     title: "Storage",
-    body: "Shelled nuts go rancid. Keep them in sealed jars in the refrigerator for months or the freezer for a year or more. Dry nuts in the shell keep longer in a cool, dry place.",
+    body: "Shelled nuts go rancid. OSU FS 146: if you cannot refrigerate or freeze hazelnuts and walnuts, store them in as cool a room as possible, 55°F or lower, and as dry as possible — they will not keep quality as long as refrigerated or frozen nuts. Chestnuts are different: they are a perishable, starchy food, more like an apple or potato than a dry tree nut. Clean and refrigerate them soon after harvest. OSU: fresh chestnuts in the shell last about 1 month in the refrigerator; frozen fresh chestnuts about 2 to 3 months at 32°F, or about 1 year at 0°F. Storing fresh chestnuts outside a fridge or freezer is not practical; they usually mold within 2 weeks.",
+    source: {
+      href: "https://ir.library.oregonstate.edu/downloads/q524jp452",
+      label: "Olsen, J., and C. Raab. Harvesting, Handling, and Storing Nuts from the Home Orchard. FS 146. Oregon State University Extension. Revised September 2002.",
+    },
+  },
+  {
+    title: "Juglone",
+    body: "Black walnut (Juglans nigra) produces juglone, which prevents many plants from growing under or near it. University of Wisconsin Extension (Joy, Hudelson, and Jull, UW Plant Disease Facts D0021, revised 28 Feb. 2024) says the effect of a mature tree can extend 50 to 80 feet from the trunk, with the greatest toxicity inside the dripline. Tomato, potato, eggplant, and pepper are particularly sensitive. Beans, beet, carrot, corn, onion, and squash are often listed as tolerant. The Wisconsin lists are based on observation, not formal testing, and sources sometimes disagree — the fact sheet says so. Related trees including butternut and shagbark hickory also produce juglone, in lower amounts. Do not use black walnut bark or wood as mulch. Finished, well-rotted compost is not the same as fresh husks or chips.",
+    source: {
+      href: "https://hort.extension.wisc.edu/articles/black-walnut-toxicity/",
+      label: "Wisconsin Horticulture, Black walnut toxicity (D0021, revised 28 Feb. 2024)",
+    },
+  },
+  {
+    title: "Thousand cankers and walnut shipping",
+    body: "Thousand cankers disease is a fungus (Geosmithia morbida) spread by the walnut twig beetle. It has killed large numbers of black walnuts, especially in the West. USDA APHIS (page last modified 1 Nov. 2025) says there is no federal regulation for the disease; several states have set up their own exterior quarantines on walnut plants, wood, and often hardwood firewood. Nuts, nut meats, and hulls are commonly exempt, but the rule in front of you is the one that counts. Check your state department of agriculture before you move walnut nursery stock, logs, or firewood across a state line. Official examples include Indiana’s exterior TCD quarantine and Missouri’s 2 CSR 70-11.060; lists of infested or regulated states change.",
+    source: {
+      href: "https://www.aphis.usda.gov/plant-pests-diseases/thousand-cankers",
+      label: "USDA APHIS, Thousand Cankers Disease (last modified 1 Nov. 2025)",
+    },
+  },
+  {
+    title: "Plant patents",
+    body: "Some named varieties are protected by plant patents or other restrictions. A missing patent label does not prove a plant is unprotected. Propagating a protected variety without permission may violate those rights, even for personal use. Check the variety’s status before grafting, layering, or sharing plants. The tag may say “PP” with a number, or “Propagation prohibited.”",
   },
   {
     title: "Acorns",
@@ -69,9 +93,19 @@ const GLOSSARY: { term: string; meaning: string }[] = [
   {
     term: "Juglone",
     meaning:
-      "A chemical from walnut roots, leaves, and husks. It commonly injures tomato, potato, pepper, and eggplant. It does not injure every garden plant.",
+      "A chemical from walnut roots, leaves, and husks. It commonly injures tomato, potato, pepper, and eggplant. University of Wisconsin Extension: the effect of a mature black walnut can extend 50 to 80 feet from the trunk, greatest inside the dripline. Shagbark hickory also produces juglone, in lower amounts. It does not injure every garden plant.",
   },
-  { term: "Aflatoxin", meaning: "A poison made by some molds on nuts." },
+  {
+    term: "Eastern filbert blight",
+    meaning:
+      "A canker disease (Anisogramma anomala) that kills susceptible hazelnuts. Buy resistant cultivars. Oregon State University notes that some trees with the older (Gasaway) resistance gene can still be infected by newer strains.",
+  },
+  {
+    term: "Thousand cankers",
+    meaning:
+      "A disease of walnut (fungus plus walnut twig beetle). APHIS: no federal quarantine; several states restrict moving walnut plants and wood. Check your state before you ship.",
+  },
+  { term: "Aflatoxin", meaning: "A poison made by some molds on nuts. You cannot cook it out." },
   { term: "Tannin", meaning: "The bitter part of acorns." },
   { term: "Hull and husk", meaning: "The outer cover around the shell." },
 ];
@@ -111,6 +145,36 @@ const SOURCES: { topic: string; label: string; href: string }[] = [
     topic: "Bitter almond and stone-fruit kernels",
     label: "FDA, Natural toxins in food",
     href: "https://www.fda.gov/food/chemical-contaminants-pesticides/natural-toxins-food",
+  },
+  {
+    topic: "Nut tree years and spacing (Kentucky examples)",
+    label: "Masabni, J. G., J. G. Strang, R. T. Jones, R. Bessin, and J. Hartman. Nut Tree Growing in Kentucky. ID-77. University of Kentucky Cooperative Extension. Copyright 2007. Search ID-77 at publications.ca.uky.edu.",
+    href: "https://publications.ca.uky.edu",
+  },
+  {
+    topic: "Harvesting, drying, and storing hazelnuts, walnuts, and chestnuts",
+    label: "Olsen, J., and C. Raab. Harvesting, Handling, and Storing Nuts from the Home Orchard. FS 146. Oregon State University Extension. Revised September 2002.",
+    href: "https://ir.library.oregonstate.edu/downloads/q524jp452",
+  },
+  {
+    topic: "Hazelnut varieties and eastern filbert blight",
+    label: "Oregon State University Extension. Growing Hazelnuts in the Pacific Northwest: Varieties. EM 9073. Also EC 1499, Detecting and Controlling Eastern Filbert Blight.",
+    href: "https://catalog.extension.oregonstate.edu/em9073",
+  },
+  {
+    topic: "Eastern filbert blight (fact sheet)",
+    label: "Oregon State University Extension. Detecting and Controlling Eastern Filbert Blight. EC 1499.",
+    href: "https://catalog.extension.oregonstate.edu/ec1499",
+  },
+  {
+    topic: "Pecan Type I and Type II pollination",
+    label: "Oklahoma State University Extension, Managing Pecans in the Home Landscape, and Texas A&M AgriLife pecan pollination charts. Confirm a current pair with your extension.",
+    href: "https://extension.okstate.edu",
+  },
+  {
+    topic: "Thousand cankers disease and walnut shipping",
+    label: "USDA APHIS. Thousand Cankers Disease. No federal regulation; several states have exterior quarantines. Page last modified 1 Nov. 2025.",
+    href: "https://www.aphis.usda.gov/plant-pests-diseases/thousand-cankers",
   },
 ];
 
@@ -208,6 +272,10 @@ export function SourcesView() {
           Zone ranges, climate-fit labels, and pollination notes in this guide are a rough
           screen. Cultivar and local conditions can change the result. Confirm a pair, a
           chill requirement, or a pesticide question with your nursery or county extension.
+          Years to first crop and spacing for several temperate nuts follow University of
+          Kentucky ID-77 as labeled Kentucky examples. Where a university or government
+          source differs from an earlier draft, this edition follows the university or
+          government source. Rules change; confirm before you plant or ship.
         </p>
       </header>
       <ul className="flex flex-col gap-3">

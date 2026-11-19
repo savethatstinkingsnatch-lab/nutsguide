@@ -22,7 +22,9 @@ export function PlantingView() {
       </ol>
       <p className="max-w-2xl text-xs leading-relaxed text-ink-soft">
         Pollination pairs are cultivar-specific. Confirm them with the nursery or your county
-        extension. Juglone guidance follows{" "}
+        extension. Wisconsin Extension says juglone from a mature black walnut can reach 50
+        to 80 feet from the trunk, greatest inside the dripline; shagbark hickory also
+        produces juglone, in lower amounts. Juglone plant lists follow{" "}
         <a
           className="underline"
           href="https://hort.extension.wisc.edu/articles/black-walnut-toxicity/"

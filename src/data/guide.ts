@@ -156,17 +156,17 @@ export const PLANTS: NutPlant[] = [
       cold: "Hardy hybrids take real winters. Buy a cold-tested plant, not a snack-bag filbert.",
       temperate: "Enough chill, and a shrub that fits a backyard. This is the easy climate for hazelnuts.",
       mediterranean: "They can crop if winter chill is real. Dry summers are fine with a deep watering now and then.",
-      humid: "Eastern filbert blight likes humid springs. Only blight-resistant cultivars are worth trying, and it is still a stretch.",
+      humid: "Eastern filbert blight likes humid springs. Only blight-resistant cultivars are worth trying, and it is still a stretch. Oregon State University notes that some trees with the older (Gasaway) resistance gene can still be infected by newer strains; confirm a current list.",
       subtropical: "Winters are too mild. Hazelnuts need a proper chilling winter.",
       tropical: "No frost and no chill means no reliable crop.",
     },
-    years: "3–5 years from a nursery plant",
+    years: "About 4–5 years to first harvest from a nursery plant (University of Kentucky Cooperative Extension, ID-77 Table 1, a Kentucky example).",
     size: "10–15 ft, often multi-stem",
-    spacing: "12–18 ft between bushes",
+    spacing: "UKY ID-77 spacing example: 15 × 15 ft.",
     sun: "Full sun, at least 6 hours.",
     soil: "Well-drained loam, pH about 6 to 7. Standing water kills them faster than cold.",
     water: "In the first two summers, water deeply when the soil under the mulch is dry. How often depends on rain and soil. Skip the daily sprinkle. Established bushes tolerate short dry spells.",
-    chill: "Roughly 800–1,200 hours. A frost-free winter is not enough.",
+    chill: "They need a real winter chill. Confirm hours for the cultivar with the nursery or your county extension. A frost-free winter is not enough. An earlier 800–1,200 hour range was not matched to a university page.",
     pollination:
       "Wind carries the pollen. Plant at least two different compatible cultivars. One bush almost never pollinates itself.",
     needsPartner: true,
@@ -177,15 +177,15 @@ export const PLANTS: NutPlant[] = [
     steps: [
       "Plant two compatible cultivars in full sun, where a test hole drains within a day.",
       "Mulch a wide ring, but keep the mulch off the stems so voles cannot nest against the bark.",
-      "Water deeply the first two summers. Skip the daily sprinkle.",
+      "Water deeply when the soil under the mulch is dry, especially the first two summers. Skip the daily sprinkle.",
       "Open the center of the bush so light and air reach the catkins. The first real crop comes in a few years, not the first fall.",
     ],
     pitfalls: [
       "One lonely bush. Hazelnuts need a different cultivar nearby.",
-      "Eastern filbert blight in humid country. Buy resistant varieties or pick another nut.",
+      "Eastern filbert blight in humid country. Buy resistant cultivars, or pick another nut. Oregon State University notes that some trees with the older (Gasaway) resistance gene can still be infected by newer strains; confirm a current resistant list with your nursery or extension.",
       "Squirrels. They harvest on their schedule, not yours.",
     ],
-    buy: "A named blight-resistant pair. Ask the nursery which pollinizer matches the cultivar you want.",
+    buy: "A named blight-resistant pair. Ask the nursery which pollinizer matches the cultivar you want, and confirm that the resistance is still current (OSU: some older “resistant” trees can be infected by newer eastern filbert blight strains).",
   },
   {
     id: "chestnut",
@@ -212,9 +212,9 @@ export const PLANTS: NutPlant[] = [
       subtropical: "Too little winter chill, and nuts set poorly.",
       tropical: "This is not a tropical tree.",
     },
-    years: "3–6 years",
+    years: "About 4–5 years to first harvest (UKY ID-77 Table 1, a Kentucky example).",
     size: "30–40 ft",
-    spacing: "30–40 ft",
+    spacing: "UKY ID-77 spacing example: 40 × 50 ft.",
     sun: "Full sun.",
     soil: "Acid to neutral, about pH 5.5–6.5, and sharply drained. Heavy wet clay is the usual killer.",
     water: "While the tree is young, water deeply when the soil under the mulch is dry. Established trees want moisture while burrs fill, not a swamp. There is no fixed weekly schedule.",
@@ -264,9 +264,9 @@ export const PLANTS: NutPlant[] = [
       subtropical: "The warm edge of the range. Little chill and sticky air make a better-matched nut the wiser choice.",
       tropical: "No. This tree wants a winter.",
     },
-    years: "6–10 years grafted; seedlings take longer",
+    years: "About 4–7 years to first harvest, grafted (UKY ID-77 Table 1, a Kentucky example); seedlings take longer.",
     size: "50–75 ft, with a wide crown",
-    spacing: "40–50 ft from other trees, and far from the garden",
+    spacing: "UKY ID-77 spacing example: 50 × 50 ft. Site it far from the garden: University of Wisconsin Extension says juglone effects can reach 50 to 80 feet from a mature trunk, with the greatest toxicity inside the dripline.",
     sun: "Full sun.",
     soil: "Deep, fertile, moist but drained. They want room for a long root.",
     water: "Deep water while young. Established trees handle ordinary summers.",
@@ -278,7 +278,7 @@ export const PLANTS: NutPlant[] = [
     startHere:
       "Plant it only if you have acreage to spare and you like the idea of a tree that will still be huge when you are not.",
     steps: [
-      "Do not plant tomatoes, peppers, potatoes, or eggplant inside the root zone. Black walnut makes juglone, which commonly injures those crops. Many other vegetables tolerate it. Extension lists of further sensitive plants are observational and do not all agree, so check a current list before you clear the whole garden.",
+      "Do not plant tomatoes, peppers, potatoes, or eggplant inside the root zone. Black walnut makes juglone, which commonly injures those crops. University of Wisconsin Extension (Joy, Hudelson, and Jull, D0021, revised 28 Feb. 2024) says the effect of a mature tree can extend 50 to 80 feet from the trunk, greatest inside the dripline. Many other vegetables tolerate it. Extension lists of further sensitive plants are observational and do not all agree, so check a current list before you clear the whole garden.",
       "Plant a grafted named tree if you want nuts sooner and shells a bit kinder.",
       "Water deeply the first summers and keep mowers off the bark.",
       "Plan the harvest mess: husks stain driveways, hands, and clothes.",
@@ -316,9 +316,9 @@ export const PLANTS: NutPlant[] = [
       subtropical: "Not enough chill, and often too much humidity. The tree may live and still refuse to fruit well.",
       tropical: "No chill, no crop.",
     },
-    years: "5–8 years grafted",
+    years: "About 5–6 years to first harvest (UKY ID-77 Table 1, a Kentucky example).",
     size: "40–60 ft",
-    spacing: "35–45 ft",
+    spacing: "UKY ID-77 spacing example: 35 × 35 ft.",
     sun: "Full sun, out of a frost pocket if you can help it.",
     soil: "Deep and drained. They decline in shallow or waterlogged ground.",
     water: "Regular deep water for the first years, and while nuts fill if the summer is dry.",
@@ -338,7 +338,7 @@ export const PLANTS: NutPlant[] = [
     pitfalls: [
       "An early-leafing tree in a frost pocket. The wood lives; the crop dies in spring.",
       "Wet, heavy soil.",
-      "English walnut makes less juglone than black walnut. Tomatoes may still struggle directly underneath. That is not a reason to assume the rest of the garden will fail.",
+      "English walnut makes less juglone than black walnut. Tomatoes may still struggle directly underneath. That is not a reason to assume the rest of the garden will fail. Wisconsin Extension notes related trees, including shagbark hickory, also produce juglone in lower amounts.",
     ],
     buy: "A named cultivar matched to your chill and frost timing. A nut from a snack bag will not come true, and it may not suit your spring.",
   },
@@ -367,9 +367,9 @@ export const PLANTS: NutPlant[] = [
       subtropical: "Works where a little winter chill remains and summers stay hot. A frost-free year with no chill is a different climate.",
       tropical: "Most pecans want some winter chill. This is the wrong sky.",
     },
-    years: "6–10 years",
+    years: "About 5–8 years to first harvest, grafted (UKY ID-77 Table 1, a Kentucky example).",
     size: "70 ft or more",
-    spacing: "40–60 ft",
+    spacing: "UKY ID-77 spacing example: 50 × 50 ft.",
     sun: "Full sun, with no plans to garden underneath later.",
     soil: "Deep, fertile, drained but moisture-holding. pH around 6 to 7.",
     water: "Thirsty while nuts fill in mid to late summer. Drought then means empty nuts even on a healthy tree.",
@@ -424,7 +424,7 @@ export const PLANTS: NutPlant[] = [
     sun: "Full sun, on ground that sheds cold air.",
     soil: "Well drained, pH near neutral. They are stone fruits and dislike wet roots.",
     water: "Steady water while the kernel fills, then drier weather so the hull can split.",
-    chill: "Often 400–700 hours, depending on the cultivar. Low-chill types still want a dry season.",
+    chill: "Chill hours vary by cultivar; confirm them with the nursery or your county extension. Low-chill types still want a dry season. An earlier 400–700 hour range was not matched to a university page.",
     pollination:
       "Most need a second variety. A few home trees are sold as self-fertile. A partner still helps if you have the room.",
     needsPartner: true,
@@ -523,9 +523,9 @@ export const PLANTS: NutPlant[] = [
       subtropical: "Not enough winter, and not the right tree.",
       tropical: "No.",
     },
-    years: "8–15 years grafted, longer from seed",
+    years: "About 10–12 years to first harvest, grafted (UKY ID-77 Table 1, a Kentucky example), longer from seed.",
     size: "60–80 ft",
-    spacing: "About 40 ft",
+    spacing: "UKY ID-77 spacing example: 50 × 50 ft.",
     sun: "Full sun to light shade when young; full sun to crop well.",
     soil: "Deep, drained, slightly acidic to neutral. They grow slowly in poor ground and may still get there.",
     water: "Ordinary rainfall in the East is enough once established. Water the first summers.",
@@ -536,7 +536,7 @@ export const PLANTS: NutPlant[] = [
     harvest:
       "Fall. Shells are thick. A real nutcracker is part of the kit, and wildlife will contest every nut.",
     startHere:
-      "Plant it if you love native trees and can wait. If you want nuts while you still live in the house, also plant a hazelnut or chestnut.",
+      "Plant it if you love native trees and can wait. If you want nuts while you still live in the house, also plant a hazelnut or chestnut. Wisconsin Extension: shagbark hickory also produces juglone, usually in lower amounts than black walnut.",
     steps: [
       "Give it a lifetime spot with deep soil, far from pavement.",
       "Buy a grafted tree if you can find one. A seedling is a gift to someone else.",
@@ -716,6 +716,10 @@ export const CHECKLIST: { id: string; label: string }[] = [
     label: "I dug a hole, filled it with water, and it drained within a day.",
   },
   {
+    id: "soil",
+    label: "I had the soil tested before adding lime, sulfur, or fertilizer.",
+  },
+  {
     id: "sun",
     label: "The spot gets at least six hours of sun, clear of the house and lines.",
   },
@@ -729,7 +733,7 @@ export const CHECKLIST: { id: string; label: string }[] = [
   },
   {
     id: "water",
-    label: "I can water deeply through the first two summers.",
+    label: "I can water deeply when the soil under the mulch is dry, especially through the first two summers.",
   },
   {
     id: "guard",
@@ -824,7 +828,7 @@ export const SEASONS: {
         text: "Harvest promptly. Squirrels, jays, and mold are all on a shorter clock than you are.",
       },
       {
-        text: "Dry nuts until the kernel snaps. Macadamias, peanuts, and walnuts stored damp will mold or go rancid.",
+        text: "Begin drying walnuts and hazelnuts within 24 hours (Oregon State University Extension, FS 146, revised September 2002). Dry with good airflow at about 95 to 105°F, and do not go above 110°F. Walnuts are dry when the divider snaps, not bends. Chestnuts are perishable: refrigerate them; they usually mold within 2 weeks at room temperature. Throw out moldy nuts.",
       },
       {
         text: "Wear gloves for black walnut husks and chestnut burrs. Walnut husk stain does not forgive.",
@@ -849,7 +853,7 @@ export const PLANTING_LESSONS: { title: string; body: string }[] = [
   },
   {
     title: "Buy a name, not a grocery nut",
-    body: "A walnut from a bag is a seedling of unknown parentage. It may not resemble the nut you ate, it may be the wrong chill type, and it will be slow. Order a named cultivar. For peanuts, buy raw seed sold for planting — roasting kills it.",
+    body: "A walnut from a bag is a seedling of unknown parentage. It may not resemble the nut you ate, it may be the wrong chill type, and it will be slow. Order a named cultivar. For peanuts, buy raw seed sold for planting — roasting kills it. Some named varieties are protected by plant patents or other restrictions. A missing patent label does not prove a plant is unprotected. Check the variety’s status before grafting, layering, or sharing plants.",
   },
   {
     title: "Assume you need two, until the entry says otherwise",
@@ -861,7 +865,7 @@ export const PLANTING_LESSONS: { title: string; body: string }[] = [
   },
   {
     title: "Plant at the size it will be",
-    body: "The cute gallon pot becomes a pecan that shades the roof. Measure the mature spacing in the entry and walk it off before you dig. Keep black walnuts away from tomatoes, peppers, potatoes, and eggplant. Juglone can injure those. Many other vegetables tolerate it.",
+    body: "The cute gallon pot becomes a pecan that shades the roof. Measure the mature spacing in the entry and walk it off before you dig. Keep black walnuts away from tomatoes, peppers, potatoes, and eggplant. University of Wisconsin Extension says juglone effects can reach 50 to 80 feet from a mature trunk, greatest inside the dripline. Many other vegetables tolerate it. Shagbark hickory also produces juglone, in lower amounts.",
   },
   {
     title: "Planting day is quiet work",
@@ -869,7 +873,7 @@ export const PLANTING_LESSONS: { title: string; body: string }[] = [
   },
   {
     title: "The first three years are about roots",
-    body: "Water deeply, keep grass back, and protect bark from mowers, rabbits, and deer. A little mulch beats a lot of fertilizer. You are not behind if there are no nuts yet. Hazelnuts and almonds are the early ones. Hickories are a different kind of promise.",
+    body: "Water deeply when the soil under the mulch is dry, keep grass back, and protect bark from mowers, rabbits, and deer. A little mulch beats a lot of fertilizer. Soil-test before you feed. You are not behind if there are no nuts yet. Hazelnuts and almonds are the early ones. Hickories are a different kind of promise.",
   },
   {
     title: "Someone else wants the crop",

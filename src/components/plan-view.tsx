@@ -83,11 +83,15 @@ export function PlanView() {
             })}
           </ul>
         )}
-        {plants.some((p) => p.id === "black-walnut" || p.id === "english-walnut") ? (
+        {plants.some((p) => p.id === "black-walnut" || p.id === "english-walnut" || p.id === "hickory") ? (
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-            Walnut note: juglone from black walnut commonly injures tomato, potato, pepper,
-            and eggplant near the roots. Many other crops tolerate it. Do not clear the
-            whole garden on a rumor. English walnut is a milder case.
+            Walnut and hickory note: juglone from black walnut commonly injures tomato,
+            potato, pepper, and eggplant near the roots. University of Wisconsin Extension
+            says the effect of a mature black walnut can extend 50 to 80 feet from the
+            trunk, with the greatest toxicity inside the dripline. Many other crops
+            tolerate it. Do not clear the whole garden on a rumor. English walnut is a
+            milder case. Shagbark hickory also produces juglone, in lower amounts
+            (Wisconsin Horticulture, Joy, Hudelson, and Jull, revised 28 Feb. 2024).
           </p>
         ) : null}
         {plants.some((p) => p.id === "cashew") ? (
